@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
     setupFormValidation();
     loadSavedFormData(); // Load saved data
+    initCountdownTimer(); // Initialize countdown timer
 
     // Add smooth scrolling for iOS
     if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPad')) {
@@ -714,7 +715,7 @@ async function handleFormSubmit(e) {
         if (success) {
             hideButtonLoading();
             hideLoadingModal();
-            showSuccessModal();
+            showSuccessModal(orderData);
             resetForm();
             
             // Track conversion (if analytics is set up)
@@ -780,6 +781,12 @@ function validateAllFields() {
         allValid = false;
     } else if (elements.detailAddress.value.trim().length < 5) {
         showFieldError(elements.detailAddress, 'Địa chỉ chi tiết quá ngắn');
+        allValid = false;
+    }
+
+    // Validate quantity selection
+    if (!elements.quantity.value || elements.quantity.value === '') {
+        showFieldError(elements.quantity, 'Vui lòng chọn số lượng sản phẩm');
         allValid = false;
     }
 
@@ -864,7 +871,7 @@ function showButtonLoading() {
         // Disable button
         elements.submitButton.disabled = true;
         elements.submitButton.classList.add('opacity-75', 'cursor-not-allowed');
-        elements.submitButton.classList.remove('hover:scale-105', 'animate-pulse');
+        elements.submitButton.classList.remove('hover:scale-105');
 
         // Hide cart icon, show spinner
         elements.cartIcon.classList.add('hidden');
@@ -883,7 +890,7 @@ function hideButtonLoading() {
         // Enable button
         elements.submitButton.disabled = false;
         elements.submitButton.classList.remove('opacity-75', 'cursor-not-allowed');
-        elements.submitButton.classList.add('hover:scale-105', 'animate-pulse');
+        elements.submitButton.classList.add('hover:scale-105');
 
         // Show cart icon, hide spinner
         elements.cartIcon.classList.remove('hidden');
@@ -913,11 +920,111 @@ function hideLoadingModal() {
 }
 
 // Show success modal
-function showSuccessModal() {
+function showSuccessModal(orderData) {
     if (elements.successModal) {
+        // Update order information
+        updateSuccessModalContent(orderData);
+
         elements.successModal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     }
+}
+
+// Update success modal content with order data
+function updateSuccessModalContent(orderData) {
+    try {
+        console.log('Updating modal with orderData:', orderData);
+
+        // Order ID
+        const orderIdEl = document.getElementById('orderIdDisplay');
+        if (orderIdEl) {
+            orderIdEl.textContent = `#${orderData.orderId}`;
+        }
+
+        // Order time
+        const orderTimeEl = document.getElementById('orderTimeDisplay');
+        if (orderTimeEl) {
+            const now = new Date();
+            const timeString = now.toLocaleString('vi-VN', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            orderTimeEl.textContent = timeString;
+        }
+
+        // Product info - get from cart array
+        const productEl = document.getElementById('productDisplay');
+        if (productEl && orderData.cart && orderData.cart[0]) {
+            const quantity = orderData.cart[0].quantity;
+            let productText = `${quantity} túi dâu tằm`;
+            if (quantity === 1) productText += ' (dùng thử)';
+            else if (quantity === 2) productText += ' (phổ biến)';
+            else if (quantity === 3) productText += ' (có quà)';
+            else if (quantity === 4) productText += ' = 5 túi (tặng 1)';
+            productEl.textContent = productText;
+        }
+
+        // Blessing text - get from cart notes
+        const blessingEl = document.getElementById('blessingDisplay');
+        if (blessingEl && orderData.cart && orderData.cart[0]) {
+            const cartNotes = orderData.cart[0].notes || '';
+            const blessingMatch = cartNotes.match(/Chữ:\s*(.+)/);
+            const blessingText = blessingMatch ? blessingMatch[1].trim() : 'Không có';
+            blessingEl.textContent = blessingText;
+            if (blessingText !== 'Không có' && blessingText !== '') {
+                blessingEl.classList.add('font-semibold');
+            }
+        }
+
+        // Total price - use the formatted total from orderData
+        const totalEl = document.getElementById('totalDisplay');
+        if (totalEl) {
+            totalEl.textContent = orderData.total;
+        }
+
+        // Customer name - get from customer object
+        const nameEl = document.getElementById('customerNameDisplay');
+        if (nameEl && orderData.customer) {
+            nameEl.textContent = orderData.customer.name;
+        }
+
+        // Customer phone - get from customer object
+        const phoneEl = document.getElementById('customerPhoneDisplay');
+        if (phoneEl && orderData.customer) {
+            phoneEl.textContent = orderData.customer.phone;
+        }
+
+        // Customer address - get from customer object
+        const addressEl = document.getElementById('customerAddressDisplay');
+        if (addressEl && orderData.customer) {
+            addressEl.textContent = orderData.customer.address;
+        }
+
+        // Order note - get from customer notes
+        const orderNoteEl = document.getElementById('orderNoteDisplay');
+        const orderNoteSection = document.getElementById('orderNoteSection');
+        if (orderNoteEl && orderNoteSection && orderData.customer) {
+            const orderNote = orderData.customer.notes;
+            if (orderNote && orderNote.trim()) {
+                orderNoteEl.textContent = orderNote;
+                orderNoteSection.classList.remove('hidden');
+            } else {
+                orderNoteSection.classList.add('hidden');
+            }
+        }
+
+    } catch (error) {
+        console.error('Error updating success modal:', error);
+        console.error('OrderData structure:', orderData);
+    }
+}
+
+// Format price to Vietnamese currency
+function formatPrice(price) {
+    return new Intl.NumberFormat('vi-VN').format(price) + 'đ';
 }
 
 // Close success modal
@@ -1044,7 +1151,7 @@ preloadResources();
 
 // Countdown Timer
 function initCountdownTimer() {
-    // Set countdown to 24 hours from now
+    // Set countdown to 2 hours from now
     let endTime;
 
     function updateCountdown() {
@@ -1065,8 +1172,8 @@ function initCountdownTimer() {
             if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
             if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
         } else {
-            // Timer expired - reset to 24 hours
-            const newEndTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+            // Timer expired - reset to 2 hours
+            const newEndTime = new Date().getTime() + (2 * 60 * 60 * 1000);
             localStorage.setItem('countdownEndTime', newEndTime.toString());
             location.reload(); // Refresh to restart countdown
         }
@@ -1083,12 +1190,12 @@ function initCountdownTimer() {
             endTime = savedTime;
         } else {
             // Create new end time if saved time expired
-            endTime = now + (24 * 60 * 60 * 1000);
+            endTime = now + (2 * 60 * 60 * 1000);
             localStorage.setItem('countdownEndTime', endTime.toString());
         }
     } else {
         // Create and save new end time
-        endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+        endTime = new Date().getTime() + (2 * 60 * 60 * 1000);
         localStorage.setItem('countdownEndTime', endTime.toString());
     }
 
@@ -1099,11 +1206,7 @@ function initCountdownTimer() {
     setInterval(updateCountdown, 1000);
 }
 
-// Initialize countdown when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Add small delay to ensure elements are rendered
-    setTimeout(initCountdownTimer, 100);
-});
+
 
 // Export functions for global access
 window.scrollToOrder = scrollToOrder;
