@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Google Apps Script</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        button { padding: 10px 20px; margin: 10px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #45a049; }
+        .result { margin-top: 20px; padding: 15px; border-radius: 4px; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test Google Apps Script</h1>
+        
+        <h2>Test 1: Direct Google Apps Script</h2>
+        <button onclick="testDirectGoogleScript()">Test Direct</button>
+        
+        <h2>Test 2: Via Cloudflare Worker</h2>
+        <button onclick="testViaWorker()">Test Via Worker</button>
+        
+        <h2>Test 3: Check Worker Health</h2>
+        <button onclick="testWorkerHealth()">Test Worker Health</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7kSQna029lyEI8HQPQ3wa5j_JMIJtfzmk_OeUQHC-MvCOaUrdaoasGhA2mtQx9yG5lQ/exec';
+        const WORKER_URL = 'https://holy-forest-b29c.yendev96.workers.dev';
+        
+        function showResult(title, success, data) {
+            const resultDiv = document.getElementById('result');
+            const className = success ? 'success' : 'error';
+            resultDiv.innerHTML = `
+                <div class="result ${className}">
+                    <h3>${title}</h3>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                </div>
+            `;
+        }
+        
+        // Test data
+        const testOrderData = {
+            orderId: "TEST-" + Date.now(),
+            orderDate: new Date().toISOString(),
+            customer: {
+                name: "Nguyễn Test",
+                phone: "0123456789",
+                address: "123 Test Street, Test City",
+                notes: "Test order"
+            },
+            cart: [{
+                name: "Túi Dâu Tằm Đực",
+                quantity: 1,
+                price: 39000,
+                weight: "Không có",
+                notes: "Chữ: Lộc"
+            }],
+            total: "64.000đ",
+            paymentMethod: 'cod',
+            telegramNotification: 'VDT_SECRET_2025_ANHIEN'
+        };
+        
+        // Test 1: Direct Google Apps Script
+        async function testDirectGoogleScript() {
+            try {
+                showResult('🔄 Testing Direct Google Apps Script...', true, 'Sending request...');
+                
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testOrderData)
+                });
+                
+                const result = await response.text();
+                
+                if (response.ok) {
+                    showResult('✅ Direct Google Apps Script - SUCCESS', true, {
+                        status: response.status,
+                        response: result
+                    });
+                } else {
+                    showResult('❌ Direct Google Apps Script - FAILED', false, {
+                        status: response.status,
+                        response: result
+                    });
+                }
+                
+            } catch (error) {
+                showResult('❌ Direct Google Apps Script - ERROR', false, {
+                    error: error.message,
+                    stack: error.stack
+                });
+            }
+        }
+        
+        // Test 2: Via Cloudflare Worker
+        async function testViaWorker() {
+            try {
+                showResult('🔄 Testing Via Cloudflare Worker...', true, 'Sending request...');
+                
+                const response = await fetch(WORKER_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testOrderData)
+                });
+                
+                const result = await response.text();
+                
+                if (response.ok) {
+                    showResult('✅ Cloudflare Worker - SUCCESS', true, {
+                        status: response.status,
+                        response: result
+                    });
+                } else {
+                    showResult('❌ Cloudflare Worker - FAILED', false, {
+                        status: response.status,
+                        response: result
+                    });
+                }
+                
+            } catch (error) {
+                showResult('❌ Cloudflare Worker - ERROR', false, {
+                    error: error.message,
+                    stack: error.stack
+                });
+            }
+        }
+        
+        // Test 3: Worker Health Check
+        async function testWorkerHealth() {
+            try {
+                showResult('🔄 Testing Worker Health...', true, 'Checking...');
+                
+                const response = await fetch(WORKER_URL, {
+                    method: 'GET'
+                });
+                
+                const result = await response.text();
+                
+                showResult('ℹ️ Worker Health Check', true, {
+                    status: response.status,
+                    response: result,
+                    note: 'Should return "Chỉ chấp nhận phương thức POST" for GET request'
+                });
+                
+            } catch (error) {
+                showResult('❌ Worker Health Check - ERROR', false, {
+                    error: error.message
+                });
+            }
+        }
+    </script>
+</body>
+</html>

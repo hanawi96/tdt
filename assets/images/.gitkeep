@@ -1,0 +1,18 @@
+# Thư mục hình ảnh cho Landing Page Tối Giản
+
+## Chỉ cần 1 hình ảnh:
+- `tui-dau-tam-hero.jpg` - Ảnh sản phẩm chính (800x600px, < 300KB)
+
+## Yêu cầu tối ưu:
+- **Định dạng**: WebP > JPEG
+- **Kích thước file**: < 300KB (siêu nhẹ)
+- **Chất lượng**: 85-90%
+- **Responsive**: Tự động scale
+
+## Tools nén ảnh nhanh:
+- [TinyPNG](https://tinypng.com) - Nén online
+- [Squoosh](https://squoosh.app) - Google tool
+
+## Lưu ý:
+- Tối giản chỉ 1 ảnh để tốc độ tối đa
+- Nền sáng, sạch sẽ, hiển thị rõ sản phẩm

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cloudflare Worker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test Cloudflare Worker</h1>
+        
+        <div>
+            <label>Worker URL:</label>
+            <input type="text" id="workerUrl" value="https://holy-forest-b29c.yendev96.workers.dev" placeholder="Nhập URL Worker của bạn">
+        </div>
+
+        <button onclick="testGet()">Test GET Request</button>
+        <button onclick="testPost()">Test POST Request (Đơn hàng mẫu)</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function showResult(data, isError = false) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.className = `result ${isError ? 'error' : 'success'}`;
+            resultDiv.textContent = JSON.stringify(data, null, 2);
+        }
+
+        async function testGet() {
+            const url = document.getElementById('workerUrl').value;
+            
+            try {
+                console.log('Testing GET request to:', url);
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                showResult({
+                    status: response.status,
+                    statusText: response.statusText,
+                    data: data
+                });
+                
+            } catch (error) {
+                console.error('GET test error:', error);
+                showResult({
+                    error: error.message,
+                    type: 'GET Request Failed'
+                }, true);
+            }
+        }
+
+        async function testPost() {
+            const url = document.getElementById('workerUrl').value;
+            
+            // Dữ liệu đơn hàng mẫu
+            const testOrder = {
+                orderId: 'TEST' + Date.now(),
+                orderDate: new Date().toISOString(),
+                customer: {
+                    name: 'Nguyễn Văn Test',
+                    phone: '0123456789',
+                    address: 'Số 123, Đường Test, Quận Test, TP Test',
+                    notes: 'Đây là đơn hàng test'
+                },
+                cart: [{
+                    name: "Túi Dâu Tằm Đực",
+                    quantity: 2,
+                    price: 78000,
+                    weight: "Không có",
+                    notes: "Chữ: Test"
+                }],
+                total: '78,000đ',
+                paymentMethod: 'cod',
+                telegramNotification: 'VDT_SECRET_2025_ANHIEN'
+            };
+
+            try {
+                console.log('Testing POST request to:', url);
+                console.log('Test data:', testOrder);
+                
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testOrder)
+                });
+
+                const data = await response.json();
+                
+                showResult({
+                    status: response.status,
+                    statusText: response.statusText,
+                    data: data
+                });
+                
+            } catch (error) {
+                console.error('POST test error:', error);
+                showResult({
+                    error: error.message,
+                    type: 'POST Request Failed'
+                }, true);
+            }
+        }
+    </script>
+</body>
+</html>

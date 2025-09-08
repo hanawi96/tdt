@@ -1,0 +1,44 @@
+# Thư mục chứa icons cho PWA
+
+## Icons cần thiết cho PWA:
+
+### Favicon:
+- `favicon-16x16.png` (16x16px)
+- `favicon-32x32.png` (32x32px)
+- `favicon.ico` (multi-size)
+
+### PWA Icons:
+- `icon-72x72.png` (72x72px)
+- `icon-96x96.png` (96x96px)
+- `icon-128x128.png` (128x128px)
+- `icon-144x144.png` (144x144px)
+- `icon-152x152.png` (152x152px)
+- `icon-192x192.png` (192x192px)
+- `icon-384x384.png` (384x384px)
+- `icon-512x512.png` (512x512px)
+
+### Apple Touch Icons:
+- `apple-touch-icon.png` (180x180px)
+- `apple-touch-icon-precomposed.png` (180x180px)
+
+### Additional Icons:
+- `badge-72x72.png` (72x72px) - For notifications
+- `shortcut-order.png` (96x96px) - For app shortcuts
+
+## Yêu cầu thiết kế:
+- **Chủ đề**: Túi dâu tằm, lá dâu, màu hồng pastel
+- **Style**: Minimalist, friendly, trustworthy
+- **Background**: Có thể trong suốt hoặc màu nền phù hợp
+- **Format**: PNG với nền trong suốt
+- **Quality**: High resolution, crisp edges
+
+## Tools tạo icons:
+- **Online**: Favicon.io, RealFaviconGenerator.net
+- **Design**: Figma, Canva, Adobe Illustrator
+- **Conversion**: ImageMagick, GIMP
+
+## Cách tạo nhanh:
+1. Tạo icon 512x512px làm master
+2. Resize xuống các kích thước khác
+3. Optimize với TinyPNG
+4. Test trên các thiết bị khác nhau

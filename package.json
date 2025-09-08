@@ -1,0 +1,24 @@
+{
+  "name": "tui-dau-tam-landing",
+  "version": "1.0.0",
+  "description": "Landing page bán túi dâu tằm cho mẹ bỉm sữa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "node build.js",
+    "preview": "wrangler preview"
+  },
+  "keywords": ["túi dâu tằm", "mẹ bỉm sữa", "landing page"],
+  "author": "Tui Dau Tam Shop",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.0.0"
+  }
+}
