@@ -158,23 +158,23 @@
                 <div class="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
                     <h3 class="text-lg font-semibold text-gray-800 mb-3 text-center">🎁 Ưu Đãi Đặc Biệt</h3>
 
-                    <!-- Countdown Timer -->
+                    <!-- Countdown Timer 1 -->
                     <div class="bg-gradient-to-r from-red-500 to-pink-500 rounded-xl p-3 mb-4">
                         <div class="text-center text-white">
                             <div class="text-xs font-medium mb-2">⏰ Ưu đãi kết thúc sau:</div>
-                            <div id="countdown" class="flex items-center justify-center space-x-2 text-sm font-bold">
+                            <div id="countdown1" class="flex items-center justify-center space-x-2 text-sm font-bold">
                                 <div class="bg-white bg-opacity-20 rounded-lg px-2 py-1 min-w-[32px]">
-                                    <span id="hours">23</span>
+                                    <span id="hours1">23</span>
                                     <div class="text-xs opacity-80">Giờ</div>
                                 </div>
                                 <span class="text-lg">:</span>
                                 <div class="bg-white bg-opacity-20 rounded-lg px-2 py-1 min-w-[32px]">
-                                    <span id="minutes">59</span>
+                                    <span id="minutes1">59</span>
                                     <div class="text-xs opacity-80">Phút</div>
                                 </div>
                                 <span class="text-lg">:</span>
                                 <div class="bg-white bg-opacity-20 rounded-lg px-2 py-1 min-w-[32px]">
-                                    <span id="seconds">59</span>
+                                    <span id="seconds1">59</span>
                                     <div class="text-xs opacity-80">Giây</div>
                                 </div>
                             </div>
@@ -437,6 +437,14 @@
                 <p class="text-gray-800 text-lg leading-relaxed text-center mb-6">
                     Từ bao đời nay, <strong class="text-green-700">cành dâu tằm đực</strong> luôn được ông bà ta coi là <strong class="text-green-700">"lá chắn dương khí"</strong>, giúp giữ vía, xua tà, mang lại giấc ngủ bình yên cho trẻ nhỏ.
                 </p>
+
+                <!-- Demo Image -->
+                <div class="text-center mb-6">
+                    <img src="image/anh_hero.jpg" alt="Túi dâu tằm đực trong nôi em bé"
+                         class="w-full max-w-lg mx-auto rounded-xl shadow-md object-cover">
+                    <p class="text-sm text-gray-500 mt-2 italic">Túi dâu tằm đực được đặt trong nôi, giúp bé ngủ ngon</p>
+                </div>
+
                 <p class="text-gray-800 text-lg leading-relaxed text-center">
                     Hôm nay, bí quyết đó được gói gọn trong <strong class="text-green-700">túi nhung sang trọng</strong>, nhỏ nhắn, dễ dàng để trong nôi, đầu giường hay mang theo bên người.
                 </p>
@@ -663,19 +671,19 @@
                 <div class="bg-gradient-to-r from-red-500 to-pink-500 rounded-xl p-3 mb-4">
                     <div class="text-center text-white">
                         <div class="text-xs font-medium mb-2">⏰ Ưu đãi kết thúc sau:</div>
-                        <div id="countdown" class="flex items-center justify-center space-x-2 text-sm font-bold">
+                        <div id="countdown2" class="flex items-center justify-center space-x-2 text-sm font-bold">
                             <div class="bg-white bg-opacity-20 rounded-lg px-2 py-1 min-w-[32px]">
-                                <span id="hours">23</span>
+                                <span id="hours2">23</span>
                                 <div class="text-xs opacity-80">Giờ</div>
                             </div>
                             <span class="text-lg">:</span>
                             <div class="bg-white bg-opacity-20 rounded-lg px-2 py-1 min-w-[32px]">
-                                <span id="minutes">59</span>
+                                <span id="minutes2">59</span>
                                 <div class="text-xs opacity-80">Phút</div>
                             </div>
                             <span class="text-lg">:</span>
                             <div class="bg-white bg-opacity-20 rounded-lg px-2 py-1 min-w-[32px]">
-                                <span id="seconds">59</span>
+                                <span id="seconds2">59</span>
                                 <div class="text-xs opacity-80">Giây</div>
                             </div>
                         </div>
@@ -687,63 +695,83 @@
                 <!-- Pricing Options -->
                 <div class="space-y-3 mb-8">
                     <!-- Option 1 -->
-                    <div class="bg-white p-4 rounded-xl border border-gray-200 hover:border-pink-300 transition-all shadow-sm">
+                    <div class="bg-white p-4 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all shadow-sm hover:shadow-md">
                         <div class="flex justify-between items-center">
-                            <div class="text-left">
-                                <div class="font-semibold text-lg text-gray-900">1 túi</div>
-                                <div class="text-xs text-gray-500">Dùng thử</div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-rose-400 rounded-full opacity-60"></div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">1 túi</h3>
+                                    <p class="text-xs text-gray-400">+ Ship 25K</p>
+                                </div>
                             </div>
                             <div class="text-right">
-                                <div class="text-2xl font-bold text-red-500">39.000đ</div>
-                                <div class="text-xs text-gray-400">+ Phí ship 25K</div>
+                                <div class="text-xl font-semibold text-gray-900">39.000<span class="text-sm text-gray-500">đ</span></div>
+                                <div class="text-xs text-gray-400">Dùng thử</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Option 2 - Popular -->
-                    <div class="bg-gradient-to-r from-blue-400 to-blue-500 p-4 rounded-xl text-white relative shadow-md">
+                    <div class="bg-white p-4 rounded-2xl border-2 border-blue-100 hover:border-blue-200 transition-all shadow-md hover:shadow-lg relative">
                         <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                            <span class="bg-yellow-400 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">PHỔ BIẾN NHẤT</span>
+                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium shadow-sm">PHỔ BIẾN</span>
                         </div>
                         <div class="flex justify-between items-center pt-1">
-                            <div class="text-left">
-                                <div class="font-semibold text-lg">2 túi</div>
-                                <div class="text-xs opacity-90">🚚 FREESHIP</div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">2 túi</h3>
+                                    <div class="flex items-center space-x-1">
+                                        <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">🚚 FREESHIP</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="text-right">
-                                <div class="text-2xl font-bold">78.000đ</div>
-                                <div class="text-xs opacity-90">Tiết kiệm 25K ship</div>
+                                <div class="text-xl font-semibold text-gray-900">75.000<span class="text-sm text-gray-500">đ</span></div>
+                                <div class="text-xs text-gray-400">Tiết kiệm 28K</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Option 3 -->
-                    <div class="bg-gradient-to-r from-purple-400 to-purple-500 p-4 rounded-xl text-white shadow-md">
+                    <div class="bg-white p-4 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all shadow-sm hover:shadow-md">
                         <div class="flex justify-between items-center">
-                            <div class="text-left">
-                                <div class="font-semibold text-lg">3 túi</div>
-                                <div class="text-xs opacity-90">🚚 FREESHIP + 🎁 Móc chìa khóa</div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-400 rounded-full opacity-60"></div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">3 túi</h3>
+                                    <div class="flex items-center space-x-1">
+                                        <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">🚚 FREESHIP</span>
+                                        <span class="bg-pink-100 text-pink-700 px-2 py-0.5 rounded text-xs">🎁 Quà</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="text-right">
-                                <div class="text-2xl font-bold">117.000đ</div>
-                                <div class="text-xs opacity-90">Có quà tặng</div>
+                                <div class="text-xl font-semibold text-gray-900">115.000<span class="text-sm text-gray-500">đ</span></div>
+                                <div class="text-xs text-gray-400">Có quà tặng</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Option 4 - Best Value -->
-                    <div class="bg-gradient-to-r from-green-400 to-green-500 p-4 rounded-xl text-white relative shadow-md">
+                    <div class="bg-white p-4 rounded-2xl border-2 border-amber-100 hover:border-amber-200 transition-all shadow-md hover:shadow-lg relative">
                         <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">🔥 SIÊU TIẾT KIỆM</span>
+                            <span class="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium shadow-sm">🔥 SIÊU TIẾT KIỆM</span>
                         </div>
                         <div class="flex justify-between items-center pt-1">
-                            <div class="text-left">
-                                <div class="font-semibold text-lg">4 túi = 5 túi</div>
-                                <div class="text-xs opacity-90">🎉 TẶNG 1 túi + FREESHIP</div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">4 túi = 5 túi</h3>
+                                    <div class="flex items-center space-x-1">
+                                        <span class="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">🎉 +1 túi</span>
+                                        <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">🚚 FREESHIP</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="text-right">
-                                <div class="text-2xl font-bold">156.000đ</div>
-                                <div class="text-xs opacity-90">Chỉ 31.2K/túi</div>
+                                <div class="text-xl font-semibold text-gray-900">150.000<span class="text-sm text-gray-500">đ</span></div>
+                                <div class="text-xs text-amber-600">30K/túi</div>
                             </div>
                         </div>
                     </div>
@@ -785,7 +813,7 @@
                     <!-- Ward Selection -->
                     <div>
                         <select id="ward" required disabled class="w-full p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-base bg-gray-50">
-                            <option value="">🏠 Chọn Phường/Xã</option>
+                            <option value="">- Chọn Phường/Xã -</option>
                         </select>
                     </div>
 
@@ -811,17 +839,17 @@
                     <select id="quantity" class="w-full p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-base">
                         <option value="" disabled selected>Chọn số lượng sản phẩm</option>
                         <option value="1">1 túi - 39K (+ ship 25K)</option>
-                        <option value="2">2 túi - 78K (FREESHIP) ⭐</option>
-                        <option value="3">3 túi - 117K (FREESHIP + Quà)</option>
-                        <option value="4">4 túi = 5 túi - 156K (Tặng 1 túi) 🔥</option>
+                        <option value="2">2 túi - 75K (FREESHIP) ⭐</option>
+                        <option value="3">3 túi - 115K (FREESHIP + Quà)</option>
+                        <option value="4">4 túi = 5 túi - 150K (Tặng 1 túi) 🔥</option>
                     </select>
                 </div>
 
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-2">Chọn chữ may trên túi</label>
                     <select id="blessingText" class="w-full p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-base">
-                        <option value="Lộc">Chữ "Lộc" - Cầu may mắn, tài lộc</option>
-                        <option value="Phúc">Chữ "Phúc" - Cầu hạnh phúc, bình an</option>
+                        <option value="Lộc">Túi in chữ "Lộc" - Cầu may mắn, tài lộc</option>
+                        <option value="Phúc">Túi in chữ "Phúc" - Cầu hạnh phúc, bình an</option>
                     </select>
                 </div>
 
@@ -829,6 +857,29 @@
                     <label class="block text-sm font-semibold text-gray-700 mb-2">Ghi chú (không bắt buộc)</label>
                     <textarea id="orderNote" rows="2" placeholder="Ví dụ: Giao giờ hành chính, gọi trước khi giao..."
                               class="w-full p-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-base"></textarea>
+
+                    <!-- Note Presets -->
+                    <div class="mt-2">
+                        <div class="text-xs text-gray-500 mb-2">Gợi ý nhanh:</div>
+                        <div class="flex flex-wrap gap-2">
+                            <button type="button" onclick="setNotePreset('Giao giờ hành chính (8h-17h), không giao cuối tuần')"
+                                    class="bg-gray-50 hover:bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-xs border border-gray-200 hover:border-gray-300 transition-all">
+                                🕘 Giờ hành chính
+                            </button>
+                            <button type="button" onclick="setNotePreset('Giao buổi chiều sau 14h, tránh giờ nghỉ trưa')"
+                                    class="bg-gray-50 hover:bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-xs border border-gray-200 hover:border-gray-300 transition-all">
+                                🌅 Buổi chiều
+                            </button>
+                            <button type="button" onclick="setNotePreset('Vui lòng gọi điện trước khi giao hàng 15-30 phút')"
+                                    class="bg-gray-50 hover:bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-xs border border-gray-200 hover:border-gray-300 transition-all">
+                                📞 Gọi trước
+                            </button>
+                            <button type="button" onclick="setNotePreset('Để hàng ở cửa, chuyển khoản sau khi nhận được hàng')"
+                                    class="bg-gray-50 hover:bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-xs border border-gray-200 hover:border-gray-300 transition-all">
+                                🏠 Để cửa - CK sau
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <button type="submit" id="submitButton"
@@ -906,7 +957,7 @@
 
     <!-- Success Modal -->
     <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-3xl shadow-2xl max-w-md mx-4 overflow-hidden flex flex-col max-h-[90vh]">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-md mx-4 overflow-hidden flex flex-col max-h-[95vh] min-h-[70vh]">
             <!-- Header - Compact -->
             <div class="bg-gradient-to-r from-green-500 to-emerald-500 px-4 py-2.5 text-center text-white sticky top-0 z-10">
                 <div class="flex items-center justify-center space-x-2">
@@ -920,7 +971,7 @@
             </div>
 
             <!-- Content - Scrollable -->
-            <div class="flex-1 overflow-y-auto px-4 py-3 max-h-96">
+            <div class="flex-1 overflow-y-auto px-4 py-4">
                 <!-- Order Info -->
                 <div class="bg-gray-50 rounded-2xl p-4 mb-4">
                     <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
@@ -1003,12 +1054,12 @@
             </div>
 
             <!-- Footer - Compact -->
-            <div class="border-t bg-white px-4 py-2.5 sticky bottom-0">
-                <div class="flex space-x-2">
-                    <button onclick="closeSuccessModal()" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-3 rounded-lg text-sm transition-colors">
+            <div class="border-t bg-white px-4 py-3 sticky bottom-0">
+                <div class="flex space-x-3">
+                    <button onclick="closeSuccessModal()" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2.5 px-4 rounded-lg text-base transition-colors">
                         Đóng
                     </button>
-                    <button onclick="window.location.reload()" class="flex-1 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-medium py-2 px-3 rounded-lg text-sm transition-colors">
+                    <button onclick="window.location.reload()" class="flex-1 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-medium py-2.5 px-4 rounded-lg text-base transition-colors">
                         Đặt thêm
                     </button>
                 </div>

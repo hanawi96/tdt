@@ -7,9 +7,9 @@ const CONFIG = {
     PHONE_REGEX: /^(0|\+84)[0-9]{9,10}$/,
     PRICES: {
         1: 39000,
-        2: 78000,
-        3: 117000,
-        4: 156000
+        2: 75000,
+        3: 115000,
+        4: 150000
     },
     SHIPPING_FEE: 25000 // Phí ship cho 1 túi
 };
@@ -479,7 +479,7 @@ function populateProvinces() {
     if (!elements.province || !addressData.length) return;
 
     // Clear existing options except the first one
-    elements.province.innerHTML = '<option value="">🏙️ Chọn Tỉnh/Thành phố</option>';
+    elements.province.innerHTML = '<option value="">- Chọn Tỉnh/Thành phố -</option>';
 
     // Add provinces
     addressData.forEach(province => {
@@ -514,7 +514,7 @@ function handleProvinceChange() {
 function populateDistricts() {
     if (!elements.district || !selectedProvince) return;
 
-    elements.district.innerHTML = '<option value="">🏘️ Chọn Quận/Huyện</option>';
+    elements.district.innerHTML = '<option value="">- Chọn Quận/Huyện -</option>';
 
     selectedProvince.Districts.forEach(district => {
         const option = document.createElement('option');
@@ -547,7 +547,7 @@ function handleDistrictChange() {
 function populateWards() {
     if (!elements.ward || !selectedDistrict) return;
 
-    elements.ward.innerHTML = '<option value="">🏠 Chọn Phường/Xã</option>';
+    elements.ward.innerHTML = '<option value="">-Chọn Phường/Xã -</option>';
 
     selectedDistrict.Wards.forEach(ward => {
         const option = document.createElement('option');
@@ -603,7 +603,7 @@ function updateFullAddress() {
 // Reset district dropdown
 function resetDistrict() {
     if (elements.district) {
-        elements.district.innerHTML = '<option value="">🏘️ Chọn Quận/Huyện</option>';
+        elements.district.innerHTML = '<option value="">-Chọn Quận/Huyện</option>';
         disableElement(elements.district);
     }
     selectedDistrict = null;
@@ -612,7 +612,7 @@ function resetDistrict() {
 // Reset ward dropdown
 function resetWard() {
     if (elements.ward) {
-        elements.ward.innerHTML = '<option value="">🏠 Chọn Phường/Xã</option>';
+        elements.ward.innerHTML = '<option value="">- Chọn Phường/Xã</option>';
         disableElement(elements.ward);
     }
     selectedWard = null;
@@ -1163,14 +1163,24 @@ function initCountdownTimer() {
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-            // Update display
-            const hoursEl = document.getElementById('hours');
-            const minutesEl = document.getElementById('minutes');
-            const secondsEl = document.getElementById('seconds');
+            // Update display for both countdown timers
+            // Timer 1
+            const hours1El = document.getElementById('hours1');
+            const minutes1El = document.getElementById('minutes1');
+            const seconds1El = document.getElementById('seconds1');
 
-            if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');
-            if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
-            if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
+            if (hours1El) hours1El.textContent = hours.toString().padStart(2, '0');
+            if (minutes1El) minutes1El.textContent = minutes.toString().padStart(2, '0');
+            if (seconds1El) seconds1El.textContent = seconds.toString().padStart(2, '0');
+
+            // Timer 2
+            const hours2El = document.getElementById('hours2');
+            const minutes2El = document.getElementById('minutes2');
+            const seconds2El = document.getElementById('seconds2');
+
+            if (hours2El) hours2El.textContent = hours.toString().padStart(2, '0');
+            if (minutes2El) minutes2El.textContent = minutes.toString().padStart(2, '0');
+            if (seconds2El) seconds2El.textContent = seconds.toString().padStart(2, '0');
         } else {
             // Timer expired - reset to 2 hours
             const newEndTime = new Date().getTime() + (2 * 60 * 60 * 1000);
@@ -1208,6 +1218,22 @@ function initCountdownTimer() {
 
 
 
+// Note Preset Function
+function setNotePreset(text) {
+    const noteTextarea = document.getElementById('orderNote');
+    if (noteTextarea) {
+        noteTextarea.value = text;
+        noteTextarea.focus();
+
+        // Add a subtle animation to show the text was set
+        noteTextarea.style.backgroundColor = '#fef3cd';
+        setTimeout(() => {
+            noteTextarea.style.backgroundColor = '';
+        }, 500);
+    }
+}
+
 // Export functions for global access
 window.scrollToOrder = scrollToOrder;
 window.closeSuccessModal = closeSuccessModal;
+window.setNotePreset = setNotePreset;
