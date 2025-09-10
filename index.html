@@ -119,474 +119,306 @@
         <div class="absolute bottom-20 left-8 w-16 h-16 bg-peach-100/30 rounded-full animate-gentle-bounce"></div>
         <div class="absolute top-1/3 left-4 w-12 h-12 bg-cream-100/50 rounded-full animate-soft-pulse"></div>
 
-        <!-- Header Section -->
-        <header class="relative z-10 px-5 pt-8 pb-6">
-            <!-- Trust badges first -->
+        <!-- HERO SECTION -->
+        <section class="relative z-10 px-5 pt-8 pb-6 bg-gradient-to-br from-sage-50 via-cream-50 to-peach-50">
+            <!-- Decorative elements for hero -->
+            <div class="absolute top-6 right-6 w-12 h-12 bg-sage-200/20 rounded-full animate-float-gentle"></div>
+            <div class="absolute bottom-8 left-6 w-8 h-8 bg-peach-200/30 rounded-full animate-gentle-bounce"></div>
 
-            <!-- Main headline -->
-            <div class="text-center mb-6">
-                <!-- Big Promise Hook -->
-                <div class="bg-gradient-to-r from-peach-100 to-sage-100 rounded-2xl p-4 mb-4 border border-peach-200/50">
-                    <h1 class="text-xl font-bold text-gray-800 mb-2 leading-tight">
-                        🌙 <span class="text-gradient">Bí Quyết Dân Gian Giúp Bé Ngủ Ngon Suốt Đêm</span>
+            <div class="glass-card rounded-3xl p-6 border border-sage-100/50 text-center relative overflow-hidden">
+                <!-- Background pattern -->
+                <div class="absolute inset-0 opacity-5">
+                    <div class="absolute top-4 left-4 w-16 h-16 border border-sage-300 rounded-full"></div>
+                    <div class="absolute bottom-4 right-4 w-12 h-12 border border-peach-300 rounded-full"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-cream-300 rounded-full"></div>
+                </div>
+
+                <!-- Trust badge -->
+                <div class="relative mb-4">
+                    <div class="inline-flex items-center bg-gradient-to-r from-sage-100 to-peach-100 px-4 py-2 rounded-full border border-sage-200/50 mb-4">
+                        <span class="text-sage-700 font-semibold text-sm">🌟 Được 1000+ mẹ bỉm sữa tin dùng</span>
+                    </div>
+                </div>
+
+                <!-- Main headline -->
+                <div class="relative mb-6">
+                    <h1 class="text-2xl font-bold text-gray-800 leading-tight mb-3">
+                        Bí Quyết Dân Gian Giúp Bé
+                        <span class="text-gradient block">Ngủ Ngon Suốt Đêm</span>
                     </h1>
-                    
-                    <p class="text-gray-600 text-sm">
-                        Túi dâu tằm đực thiên nhiên - Giải pháp an toàn, hiệu quả <strong>được truyền từ đời này sang đời khác</strong>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Túi dâu tằm đực thiên nhiên 100% - Truyền thống từ làng quê Bắc Giang
+                        <br><strong class="text-peach-600">Không còn thức trắng đêm vì con khóc!</strong>
                     </p>
                 </div>
 
-            </div>
+                <!-- Product image - Rộng 100% để khách hàng nhìn rõ -->
+                <div class="mb-6">
+                    <div class="w-full h-64 rounded-2xl overflow-hidden soft-shadow">
+                        <img src="image/anh_hero.jpg" alt="Túi dâu tằm đực thiên nhiên"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
 
-            <!-- Enhanced Product Showcase - Countryside Feel -->
-            <div class="text-center mb-6">
-                <!-- Main Product Image with Natural Elements -->
-                <div class="relative mb-6">
-                    <div class="glass-card rounded-3xl p-4 border border-sage-100/50 relative overflow-hidden">
-                        <!-- Decorative countryside elements -->
-                        <div class="absolute top-2 left-2 w-8 h-8 opacity-20">
-                            <div class="w-full h-full bg-sage-200 rounded-full"></div>
-                            <div class="absolute top-1 left-1 w-2 h-2 bg-peach-300 rounded-full"></div>
+                <!-- PROBLEM SECTION - Liệt kê vấn đề bé gặp phải -->
+                <div class="mb-6">
+                    <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-4 border border-red-200/50">
+                        <div class="text-center mb-4">
+                            <div class="text-2xl mb-2">�</div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">
+                                Mẹ có đang gặp những vấn đề này?
+                            </h3>
                         </div>
-                        <div class="absolute bottom-2 right-2 w-6 h-6 opacity-15">
-                            <div class="w-full h-full bg-cream-300 rounded-full transform rotate-45"></div>
-                        </div>
 
-                        <div class="relative">
-                            <img src="image/anh_hero.jpg"
-                                 alt="Túi Dâu Tằm Đực Thiên Nhiên - Bí quyết dân gian giúp bé ngủ ngon"
-                                 class="w-full h-64 object-cover rounded-2xl soft-shadow"
-                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-
-                            <!-- Enhanced fallback design with countryside theme -->
-                            <div class="w-full h-64 bg-gradient-to-br from-sage-100 via-cream-100 to-peach-100 rounded-2xl flex items-center justify-center relative overflow-hidden" style="display: none;">
-                                <!-- Countryside background pattern -->
-                                <div class="absolute inset-0 opacity-10">
-                                    <div class="absolute top-4 left-4 w-12 h-12 bg-sage-300 rounded-full transform -rotate-12"></div>
-                                    <div class="absolute top-8 right-6 w-8 h-8 bg-peach-300 rounded-full"></div>
-                                    <div class="absolute bottom-6 left-8 w-6 h-6 bg-cream-400 rounded-full transform rotate-45"></div>
-                                    <div class="absolute bottom-4 right-4 w-10 h-10 bg-sage-200 rounded-full transform rotate-12"></div>
+                        <div class="space-y-3">
+                            <!-- Vấn đề 1: Giấc ngủ -->
+                            <div class="flex items-start space-x-3 bg-white/80 rounded-xl p-3">
+                                <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-red-600 text-sm">😴</span>
                                 </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">Bé khó ngủ, ngủ không sâu giấc</p>
+                                    <p class="text-gray-600 text-xs">Giật mình liên tục, thức giữa đêm, khóc nhiều</p>
+                                </div>
+                            </div>
 
-                                <!-- Main product representation -->
-                                <div class="absolute inset-6 bg-gradient-to-br from-sage-200/90 to-cream-200/90 rounded-2xl shadow-lg transform -rotate-2 animate-float-gentle">
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <div class="text-center">
-                                            <div class="w-24 h-24 border-3 border-sage-500 rounded-full flex items-center justify-center bg-white/90 mb-2">
-                                                <span class="text-4xl">🌿</span>
-                                            </div>
-                                            <div class="text-sage-700 font-bold text-sm">Túi Dâu Tằm</div>
-                                            <div class="text-sage-600 text-xs">Thiên Nhiên 100%</div>
-                                        </div>
+                            <!-- Vấn đề 2: Dạ đề -->
+                            <div class="flex items-start space-x-3 bg-white/80 rounded-xl p-3">
+                                <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-orange-600 text-sm">😢</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">Bé dạ đề, sợ người lạ</p>
+                                    <p class="text-gray-600 text-xs">Khóc khi gặp người lạ, bồn chồn khó an thần</p>
+                                </div>
+                            </div>
+
+                            <!-- Vấn đề 3: Mẹ kiệt sức -->
+                            <div class="flex items-start space-x-3 bg-white/80 rounded-xl p-3">
+                                <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-red-600 text-sm">😵</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">Mẹ thức trắng đêm, kiệt sức</p>
+                                    <p class="text-gray-600 text-xs">Stress, lo lắng, ảnh hưởng sức khỏe và công việc</p>
+                                </div>
+                            </div>
+
+                            <!-- Vấn đề 4: Gia đình mệt mỏi -->
+                            <div class="flex items-start space-x-3 bg-white/80 rounded-xl p-3">
+                                <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-orange-600 text-sm">👨‍👩‍👧‍👦</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">Cả gia đình mất ngủ</p>
+                                    <p class="text-gray-600 text-xs">Không ai được nghỉ ngơi, tâm trạng căng thẳng</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 text-center">
+                            <p class="text-red-600 font-semibold text-sm italic">
+                                "Nếu để kéo dài, sẽ ảnh hưởng nghiêm trọng đến sự phát triển của bé!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOLUTION SECTION - Giải pháp -->
+                <div class="mb-6">
+                    <div class="bg-gradient-to-r from-sage-50 to-peach-50 rounded-2xl p-4 border border-sage-200/50">
+                        <div class="text-center mb-4">
+                            <div class="text-2xl mb-2">✨</div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">
+                                Giải pháp an toàn từ thiên nhiên
+                            </h3>
+                            <p class="text-gray-600 text-sm">
+                                <strong class="text-peach-600">Từ đêm đầu tiên sử dụng</strong>, bé sẽ ngủ sâu giấc hơn
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3 bg-white/80 rounded-xl p-3 border border-sage-100">
+                                <div class="w-10 h-10 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-sage-600">👶</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">Bé ngủ sâu giấc, ít giật mình</p>
+                                    <p class="text-gray-600 text-xs">Dâu tằm đực có dương khí mạnh, giúp bé an thần tự nhiên</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-3 bg-white/80 rounded-xl p-3 border border-peach-100">
+                                <div class="w-10 h-10 bg-peach-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-peach-600">🤱</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-sm">Mẹ được nghỉ ngơi đầy đủ</p>
+                                    <p class="text-gray-600 text-xs">100% tự nhiên, an toàn tuyệt đối cho cả mẹ và bé</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Price highlight - Phong cách đồng quê, thiên nhiên -->
+                <div class="mb-6">
+                    <div class="bg-gradient-to-br from-cream-50 via-sage-50 to-peach-50 rounded-3xl p-5 border-2 border-sage-200/50 text-center relative overflow-hidden">
+                        <!-- Decorative natural elements -->
+                        <div class="absolute top-2 right-2 w-8 h-8 bg-sage-200/20 rounded-full"></div>
+                        <div class="absolute bottom-2 left-2 w-6 h-6 bg-peach-200/20 rounded-full"></div>
+                        <div class="absolute top-1/2 left-1 w-4 h-4 bg-cream-200/30 rounded-full"></div>
+
+                        <!-- Header với cảm giác làng quê -->
+                        <div class="relative mb-4">
+                            <div class="inline-flex items-center bg-gradient-to-r from-sage-100 to-peach-100 px-4 py-2 rounded-full border border-sage-200/50 mb-2">
+                                <span class="text-sage-700 font-semibold text-sm">🌾 Ưu đãi từ làng quê</span>
+                            </div>
+                        </div>
+
+                        <!-- Giá cơ bản với phong cách tự nhiên -->
+                        <div class="relative mb-4">
+                            <div class="bg-white/80 rounded-2xl p-4 border border-sage-100 soft-shadow">
+                                <div class="text-2xl font-bold text-sage-700 mb-1">39K/túi</div>
+                                <div class="text-gray-600 text-sm">+ Phí ship 26.000đ</div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Ưu đãi với thiết kế đồng quê -->
+                        <div class="space-y-3 relative">
+                            <!-- Gói 2 túi -->
+                            <div class="bg-gradient-to-r from-sage-50 to-peach-50 rounded-2xl p-3 border border-sage-200/50 relative">
+                                <!-- Badge "Bán chạy nhất" -->
+                                <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                                    <div class="bg-gradient-to-r from-sage-500 to-sage-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                        🔥 Bán chạy nhất
                                     </div>
                                 </div>
-
-                                <!-- Floating natural elements -->
-                                <div class="absolute top-3 left-3 w-4 h-4 bg-peach-400 rounded-full animate-gentle-bounce opacity-60"></div>
-                                <div class="absolute bottom-3 right-3 w-3 h-3 bg-sage-400 rounded-full animate-soft-pulse opacity-60"></div>
-                                <div class="absolute top-1/2 left-2 w-2 h-2 bg-cream-500 rounded-full animate-gentle-bounce opacity-40" style="animation-delay: 1s;"></div>
+                                <div class="pt-2">
+                                    <div class="flex items-center justify-center space-x-2 mb-1">
+                                        <div class="w-6 h-6 bg-sage-100 rounded-full flex items-center justify-center">
+                                            <span class="text-sage-600 text-xs">🌿</span>
+                                        </div>
+                                        <span class="text-sage-700 font-bold text-sm">Mua 2 túi = 78K</span>
+                                    </div>
+                                    <div class="text-sage-600 text-xs">+ Freeship toàn quốc</div>
+                                </div>
                             </div>
 
-                            <!-- Trust badge -->
-                            <div class="absolute top-3 left-3 bg-white/95 px-3 py-1 rounded-full text-xs font-medium shadow-md border border-sage-200">
-                                <div class="flex items-center space-x-1">
-                                    <span class="text-sage-600">🏛️</span>
-                                    <span class="text-sage-700">Truyền thống dân gian</span>
+                            <!-- Gói 3 túi - Tiết kiệm nhất -->
+                            <div class="bg-gradient-to-r from-peach-100 to-cream-100 rounded-2xl p-4 border-2 border-peach-300/50 relative">
+                                <!-- Badge "Tiết kiệm nhất" -->
+                                <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                                    <div class="bg-gradient-to-r from-peach-500 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                        💰 Tiết kiệm nhất
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <div class="flex items-center justify-center space-x-2 mb-1">
+                                        <div class="w-6 h-6 bg-peach-100 rounded-full flex items-center justify-center">
+                                            <span class="text-peach-600 text-xs">🎁</span>
+                                        </div>
+                                        <span class="text-peach-700 font-bold text-sm">Mua 3 túi = Tặng 1 túi</span>
+                                    </div>
+                                    <div class="text-peach-600 text-xs mb-1">Được 4 túi + Freeship</div>
+                                    <div class="inline-flex items-center bg-peach-200/50 px-2 py-1 rounded-full">
+                                        <span class="text-peach-700 font-semibold text-xs">Chỉ 29K/túi</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Thông điệp làng quê -->
+                        <div class="mt-4 relative">
+                            <div class="bg-gradient-to-r from-cream-100 to-sage-100 rounded-xl p-3 border border-cream-200/50">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <span class="text-cream-600 text-sm">🏡</span>
+                                    <p class="text-sage-700 font-medium text-xs">
+                                        Từ vườn dâu gia đình đến tay mẹ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="mb-4">
+                    <a href="#order-section"
+                       class="block w-full bg-gradient-to-r from-peach-500 to-sage-500 hover:from-peach-600 hover:to-sage-600 text-white py-4 rounded-2xl font-bold text-lg soft-shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="flex items-center justify-center space-x-3 mb-1">
+                                <div class="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
+                                    <span class="text-sm">🛒</span>
+                                </div>
+                                <span class="text-lg font-bold">ĐẶT HÀNG NGAY</span>
+                            </div>
+                            <div class="text-white/90 text-sm font-medium">
+                                Mua 2 túi freeship
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Trust signals -->
+                <div class="flex items-center justify-center space-x-4 text-xs text-gray-600">
+                    <div class="flex items-center space-x-1">
+                        <div class="w-2 h-2 bg-sage-400 rounded-full"></div>
+                        <span>Giao hàng 1-2 ngày</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <div class="w-2 h-2 bg-peach-400 rounded-full"></div>
+                        <span>Đổi trả 7 ngày</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <div class="w-2 h-2 bg-cream-500 rounded-full"></div>
+                        <span>Hỗ trợ 24/7</span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Problem awareness - soft approach -->
-            <div class="glass-card rounded-2xl p-4 mb-4 border border-peach-100/50">
-                <div class="text-center mb-3">
-                    <div class="w-12 h-12 bg-peach-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span class="text-2xl">😴</span>
-                    </div>
-                    <p class="text-peach-700 font-semibold text-sm">Mẹ có đang lo lắng vì...</p>
-                </div>
-                <div class="space-y-2 text-sm text-gray-600">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-1.5 h-1.5 bg-peach-400 rounded-full"></div>
-                        <span>Bé thức đêm nhiều lần, khóc không rõ lý do</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <div class="w-1.5 h-1.5 bg-peach-400 rounded-full"></div>
-                        <span>Mẹ mất ngủ, kiệt sức chăm con</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <div class="w-1.5 h-1.5 bg-peach-400 rounded-full"></div>
-                        <span>Lo lắng khi đưa bé ra ngoài gặp người lạ</span>
-                    </div>
-                </div>
-            </div>
-
-           
-        </header>
-
-         <!-- Heritage Story Section -->
+         <!-- Heritage Story - Mở rộng và cá nhân hóa -->
         <section class="relative z-10 px-5 py-6 bg-gradient-to-br from-cream-50 to-sage-50">
             <div class="glass-card rounded-3xl p-5 border border-sage-100/50">
                 <div class="text-center mb-4">
                     <div class="w-12 h-12 bg-gradient-to-r from-sage-100 to-peach-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span class="text-2xl">🏛️</span>
+                        <span class="text-2xl">�</span>
                     </div>
                     <h3 class="text-lg font-bold text-gray-800 mb-2">Câu Chuyện Từ Làng Quê Việt Nam</h3>
                 </div>
 
                 <div class="space-y-4 text-sm text-gray-700 leading-relaxed">
-                    <p class="text-center">
-                        <span class="font-semibold text-sage-600">"Ngày xưa, khi bé khóc đêm không ngủ được..."</span>
+                    <p class="text-center italic text-sage-600">
+                        "Ngày xưa, khi bé khóc đêm không ngủ được..."
                     </p>
 
                     <p>
-                        Các bà mẹ trong làng thường lấy <strong class="text-peach-600">cành dâu tằm đực</strong> phơi khô,
-                        gói trong túi vải nhỏ và đặt gần đầu giường bé. Họ tin rằng <strong>dương khí mạnh mẽ</strong>
-                        từ gỗ dâu tằm sẽ giúp bé có giấc ngủ sâu, ít giật mình.
+                        Ngày xưa , khi nào có bé khóc đêm, dỗ mài không nghín, là do bé mới sinh vía còn yếu nên dễ bị trêu. Các bà mẹ thường lấy <strong class="text-peach-600">cành dâu tằm đực già chắc, đặt lõi</strong>, phơi khô dưới nắng rồi để trong phòng hoặc cắt thành khúc nhỏ gói trong túi vải.
                     </p>
 
                     <p>
-                        Qua nhiều thế hệ, bí quyết này được <strong class="text-sage-600">truyền từ mẹ sang con</strong>,
-                        từ bà sang cháu. Hôm nay, chúng tôi mang đến cho các mẹ hiện đại
-                        <strong class="text-peach-600">phiên bản tiện lợi</strong> của truyền thống ấy.
+                        Cành dâu tằm đực, <strong class="text-sage-600">dương khí mạnh</strong>, khi được phơi khô dưới ánh nắng mắt trời tự nhiên thì càng mạnh nữa. Đặt ở đầu giường, bé sẽ ngủ sâu hơn, ít giật mình. Đây là bí quyết được truyền từ đời này sang đời khác.
+                    </p>
+
+                    <p>
+                        Khi sinh con, mình nhớ lại và thử làm theo. <strong class="text-peach-600">Không ngờ thật sự hiệu quả!</strong> Từ đó mình quyết định chia sẻ với các mẹ khác.
+                    </p>
+
+                    <p>
+                        Giờ mình làm theo cách truyền thống, nhưng <strong class="text-sage-600">cải tiến cho tiện lợi hơn</strong> - túi vải đẹp, kích thước vừa phải, dễ mang theo.
                     </p>
                 </div>
 
                 <div class="mt-4 bg-gradient-to-r from-peach-50 to-cream-50 rounded-xl p-3 border border-peach-100/50">
                     <div class="text-center">
                         <p class="text-peach-700 font-semibold text-sm mb-1">
-                            ✨ Từ truyền thống đến hiện đại
+                            🌾 Từ vườn dâu gia đình đến tay mẹ
                         </p>
                         <p class="text-gray-600 text-xs">
-                            Cùng một bí quyết, nhưng tiện lợi và an toàn hơn cho bé yêu
+                            Mỗi túi đều được làm thủ công với tình yêu thương
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Simple Pricing Section -->
-        <section class="relative z-10 px-5 py-6">
-            <div class="glass-card rounded-3xl p-5 border border-sage-100/50">
-                <!-- Special offer header -->
-                <div class="text-center mb-4">
-                    <div class="inline-flex items-center bg-peach-100 px-4 py-2 rounded-full mb-3">
-                        <span class="text-peach-700 font-semibold text-sm">🎁 Ưu Đãi Đặc Biệt</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">
-                        Chỉ với <span class="text-gradient">39.000đ</span>
-                    </h3>
-                    <p class="text-gray-600 text-sm">Giá một ly trà sữa</p>
-                </div>
-
-                <!-- Main value proposition -->
-                <div class="bg-gradient-to-r from-sage-50 to-cream-50 rounded-2xl p-5 mb-4 border border-sage-100/50">
-                    <div class="text-center">
-                        <p class="text-gray-800 font-bold text-lg leading-tight mb-2">
-                            Mẹ sẽ có <span class="text-sage-600">đêm ngủ yên bình</span>
-                        </p>
-                        <p class="text-gray-700 text-base">
-                            <span class="text-peach-600 font-semibold">Không còn thức trắng đêm</span> vì con khóc!
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Natural Combo Offers - Countryside Style -->
-        <section class="relative z-10 px-5 py-6 bg-gradient-to-br from-sage-50/30 via-cream-50/30 to-peach-50/30">
-            <div class="glass-card rounded-3xl p-5 border border-sage-100/50 relative overflow-hidden">
-                <!-- Decorative natural elements -->
-                <div class="absolute top-0 right-0 w-20 h-20 opacity-10">
-                    <div class="w-full h-full bg-sage-200 rounded-full transform rotate-12"></div>
-                    <div class="absolute top-2 left-2 w-4 h-4 bg-peach-200 rounded-full"></div>
-                    <div class="absolute bottom-1 right-3 w-2 h-2 bg-cream-300 rounded-full"></div>
-                </div>
-
-                <!-- Header with natural feel -->
-                <div class="text-center mb-6 relative">
-                    <div class="inline-flex items-center bg-gradient-to-r from-sage-100 to-peach-100 px-4 py-2 rounded-full mb-3 border border-sage-200/50">
-                        <span class="text-sage-700 font-semibold text-sm">🌾 Gói Gia Đình Tiết Kiệm</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">Chọn Gói Phù Hợp Cho Gia Đình</h3>
-                    <p class="text-gray-600 text-sm">Như các mẹ trong làng thường chuẩn bị dự trữ</p>
-                </div>
-
-                <!-- Gentle time reminder -->
-                <div class="bg-gradient-to-r from-cream-100 to-sage-100 rounded-2xl p-4 mb-5 border border-cream-200/50">
-                    <div class="text-center">
-                        <div class="flex items-center justify-center space-x-2 mb-2">
-                            <span class="text-lg">🕐</span>
-                            <span class="text-cream-700 font-medium text-sm">Ưu đãi có hạn trong hôm nay</span>
-                        </div>
-                        <div id="countdown1" class="flex items-center justify-center space-x-3 text-sm">
-                            <div class="bg-white/90 rounded-xl px-3 py-2 soft-shadow border border-sage-100">
-                                <div class="font-bold text-sage-600" id="hours1">23</div>
-                                <div class="text-xs text-gray-500">giờ</div>
-                            </div>
-                            <div class="text-sage-400 text-lg">•</div>
-                            <div class="bg-white/90 rounded-xl px-3 py-2 soft-shadow border border-sage-100">
-                                <div class="font-bold text-sage-600" id="minutes1">59</div>
-                                <div class="text-xs text-gray-500">phút</div>
-                            </div>
-                            <div class="text-sage-400 text-lg">•</div>
-                            <div class="bg-white/90 rounded-xl px-3 py-2 soft-shadow border border-sage-100">
-                                <div class="font-bold text-sage-600" id="seconds1">59</div>
-                                <div class="text-xs text-gray-500">giây</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Natural combo options -->
-                <div class="space-y-4">
-                    <!-- Gói 2 túi - Phổ biến -->
-                    <div class="bg-gradient-to-r from-sage-50 to-cream-50 rounded-2xl p-4 border-2 border-sage-200/60 relative">
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                            <div class="bg-sage-500 text-white px-4 py-1 rounded-full text-xs font-medium soft-shadow flex items-center space-x-1">
-                                <span>🌟</span>
-                                <span>Mẹ chọn nhiều nhất</span>
-                            </div>
-                        </div>
-                        <div class="pt-3">
-                            <div class="flex justify-between items-start mb-3">
-                                <div class="flex-1">
-                                    <h4 class="font-bold text-gray-800 text-base mb-1">Gói 2 Túi Dâu Tằm</h4>
-                                    <p class="text-sage-600 text-sm mb-2">Một túi để nhà, một túi mang theo</p>
-                                    <div class="text-xs text-gray-500 italic">
-                                        "Như bà ngoại thường chuẩn bị dự phòng"
-                                    </div>
-                                </div>
-                                <div class="text-right ml-4">
-                                    <div class="text-gray-400 line-through text-sm">103K</div>
-                                    <div class="text-sage-600 text-xl font-bold">75K</div>
-                                    <div class="text-sage-500 text-xs">Tiết kiệm 28K</div>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap gap-2 text-xs">
-                                <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full border border-sage-200">🚚 Freeship</span>
-                                <span class="bg-peach-100 text-peach-700 px-3 py-1 rounded-full border border-peach-200">🎉 Phổ biến</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Gói 3 túi -->
-                    <div class="bg-gradient-to-r from-peach-50 to-cream-50 rounded-2xl p-4 border border-peach-200/60">
-                        <div class="flex justify-between items-start mb-3">
-                            <div class="flex-1">
-                                <h4 class="font-bold text-gray-800 text-base mb-1">Gói 3 Túi Dâu Tằm</h4>
-                                <p class="text-peach-600 text-sm mb-2">Chia sẻ với chị em, bạn bè</p>
-                                <div class="text-xs text-gray-500 italic">
-                                    "Cùng nhau chăm con khỏe mạnh"
-                                </div>
-                            </div>
-                            <div class="text-right ml-4">
-                                <div class="text-gray-400 line-through text-sm">142K</div>
-                                <div class="text-peach-600 text-xl font-bold">115K</div>
-                                <div class="text-peach-500 text-xs">Chỉ 38K/túi</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2 text-xs">
-                            <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full border border-sage-200">🚚 Freeship</span>
-                            <span class="bg-peach-100 text-peach-700 px-3 py-1 rounded-full border border-peach-200">🎉 Tặng 1 túi</span>
-                        </div>
-                    </div>
-
-                    <!-- Gói 4 = 5 túi - Siêu tiết kiệm -->
-                    <div class="bg-gradient-to-r from-cream-50 to-sage-50 rounded-2xl p-4 border-2 border-cream-200/60 relative">
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                            <div class="bg-gradient-to-r from-peach-500 to-cream-500 text-white px-4 py-1 rounded-full text-xs font-medium soft-shadow flex items-center space-x-1">
-                                <span>🔥</span>
-                                <span>Siêu tiết kiệm</span>
-                            </div>
-                        </div>
-                        <div class="pt-3">
-                            <div class="flex justify-between items-start mb-3">
-                                <div class="flex-1">
-                                    <h4 class="font-bold text-gray-800 text-base mb-1">Mua 4 Tặng 1 Túi</h4>
-                                    <p class="text-cream-600 text-sm mb-2">Đủ dùng cả năm, tặng người thân</p>
-                                    <div class="text-xs text-gray-500 italic">
-                                        "Như mẹ chồng hay dặn: chuẩn bị đầy đủ"
-                                    </div>
-                                </div>
-                                <div class="text-right ml-4">
-                                    <div class="text-gray-400 line-through text-sm">195K</div>
-                                    <div class="text-cream-600 text-xl font-bold">150K</div>
-                                    <div class="text-cream-500 text-xs">Chỉ 30K/túi</div>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap gap-2 text-xs">
-                                <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full border border-sage-200">🚚 Freeship</span>
-                                <span class="bg-peach-100 text-peach-700 px-3 py-1 rounded-full border border-peach-200">🎉 Tặng 1 túi</span>
-                                <span class="bg-cream-100 text-cream-700 px-3 py-1 rounded-full border border-cream-200">💰 Rẻ nhất</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Countryside wisdom -->
-                <div class="mt-5 bg-gradient-to-r from-sage-50 to-peach-50 rounded-2xl p-4 border border-sage-100/50">
-                    <div class="flex items-start space-x-3">
-                        <div class="w-10 h-10 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-lg">👵</span>
-                        </div>
-                        <div class="flex-1">
-                            <p class="text-sage-700 font-medium text-sm mb-1">
-                                💬 Lời khuyên từ các bà mẹ có kinh nghiệm:
-                            </p>
-                            <p class="text-gray-600 text-sm leading-relaxed italic">
-                                "Nên mua 2-3 túi để thay phiên nhau. Một túi để nhà, một túi mang đi chơi.
-                                Túi nào hết mùi thì phơi nắng lại dùng được tiếp."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call to Action -->
-        <section class="relative z-10 px-5 py-6">
-            <div class="text-center">
-                <!-- Main CTA Button -->
-                <button onclick="scrollToOrder()" class="w-full bg-gradient-to-r from-peach-500 to-sage-500 hover:from-peach-600 hover:to-sage-600 text-white font-bold text-lg px-6 py-4 rounded-2xl soft-shadow hover:shadow-lg transition-all duration-300 mb-4 transform hover:scale-105">
-                    <div class="flex items-center justify-center">
-                        <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                            <span class="text-sm">🛒</span>
-                        </div>
-                        <div>
-                            <div class="text-lg font-bold">ĐẶT HÀNG NGAY</div>
-                            <div class="text-sm font-normal opacity-90">Chỉ 39.000đ - Mua 2 túi FREESHIP</div>
-                        </div>
-                    </div>
-                </button>
-
-                <!-- Payment & Support Info -->
-                <div class="grid grid-cols-3 gap-2 mb-4">
-                    <div class="glass-card px-3 py-2 rounded-xl border border-sage-100/50">
-                        <div class="text-center">
-                            <div class="w-6 h-6 bg-peach-100 rounded-full flex items-center justify-center mx-auto mb-1">
-                                <span class="text-peach-600 text-xs">💳</span>
-                            </div>
-                            <span class="text-xs text-gray-600 font-medium">COD</span>
-                        </div>
-                    </div>
-                    <div class="glass-card px-3 py-2 rounded-xl border border-sage-100/50">
-                        <div class="text-center">
-                            <div class="w-6 h-6 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-1">
-                                <span class="text-sage-600 text-xs">💬</span>
-                            </div>
-                            <span class="text-xs text-gray-600 font-medium">Hỗ trợ 24/7</span>
-                        </div>
-                    </div>
-                    <div class="glass-card px-3 py-2 rounded-xl border border-sage-100/50">
-                        <div class="text-center">
-                            <div class="w-6 h-6 bg-cream-100 rounded-full flex items-center justify-center mx-auto mb-1">
-                                <span class="text-cream-600 text-xs">🚚</span>
-                            </div>
-                            <span class="text-xs text-gray-600 font-medium">Toàn quốc</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gentle urgency -->
-                <div class="glass-card rounded-2xl p-4 border border-peach-100/50">
-                    <div class="flex items-center justify-center space-x-3">
-                        <div class="w-8 h-8 bg-peach-100 rounded-full flex items-center justify-center animate-soft-pulse">
-                            <span class="text-peach-600 text-sm">⏰</span>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-gray-700 font-semibold text-sm">Số lượng có hạn</p>
-                            <p class="text-gray-600 text-xs">Mỗi ngày chỉ chuẩn bị 100 túi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       
-
-        <!-- Benefits Section -->
-        <section class="relative z-10 px-5 py-8 bg-gradient-to-br from-sage-50 via-cream-50 to-peach-50">
-            <!-- Gentle decorative elements -->
-            <div class="absolute top-10 right-8 w-16 h-16 bg-sage-200/20 rounded-full animate-float-gentle"></div>
-            <div class="absolute bottom-16 left-6 w-12 h-12 bg-peach-200/20 rounded-full animate-gentle-bounce"></div>
-
-            <div class="text-center mb-8">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">
-                    Lợi Ích Thực Tế Cho
-                    <span class="text-gradient">Mẹ Và Bé</span>
-                </h3>
-                <div class="w-16 h-1 bg-gradient-to-r from-sage-400 to-peach-400 mx-auto rounded-full"></div>
-            </div>
-
-            <div class="space-y-4">
-                <!-- Benefit 1 -->
-                <div class="glass-card rounded-2xl p-5 border border-sage-100/50 transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-sage-100 to-sage-200 rounded-2xl flex items-center justify-center flex-shrink-0">
-                            <span class="text-2xl">👶</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2 text-lg">Bé ngủ ngon giấc hơn</h4>
-                            <p class="text-gray-600 leading-relaxed text-sm">Ít giật mình quấy khóc, ngủ sâu giấc suốt đêm. Mẹ cũng được nghỉ ngơi đầy đủ</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Benefit 2 -->
-                <div class="glass-card rounded-2xl p-5 border border-peach-100/50 transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-peach-100 to-peach-200 rounded-2xl flex items-center justify-center flex-shrink-0">
-                            <span class="text-2xl">🚶‍♀️</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2 text-lg">Tự tin khi ra ngoài</h4>
-                            <p class="text-gray-600 leading-relaxed text-sm">Bé không còn dễ khóc dạ đề khi gặp người lạ. Mẹ yên tâm hơn khi đưa con đi chơi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div class="glass-card rounded-2xl p-5 border border-cream-100/50 transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-cream-100 to-cream-200 rounded-2xl flex items-center justify-center flex-shrink-0">
-                            <span class="text-2xl">🤰</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2 text-lg">Mẹ bầu an tâm</h4>
-                            <p class="text-gray-600 leading-relaxed text-sm">Tránh những ảnh hưởng xấu đến tinh thần thai nhi, mang thai khỏe mạnh</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Benefit 4 -->
-                <div class="glass-card rounded-2xl p-5 border border-sage-100/50 transform hover:scale-105 transition-all duration-300">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-sage-100 to-peach-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                            <span class="text-2xl">💝</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2 text-lg">Mẹ bỉm thấy yên lòng</h4>
-                            <p class="text-gray-600 leading-relaxed text-sm">Tinh thần nhẹ nhõm, ngủ sâu giấc hơn, chăm con hiệu quả và hạnh phúc hơn</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional trust element -->
-            <div class="mt-6 text-center">
-                <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
-                    <div class="flex items-center justify-center space-x-3">
-                        <div class="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center">
-                            <span class="text-sage-600 text-sm">🌿</span>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-semibold text-sm">100% Thiên Nhiên - An Toàn Tuyệt Đối</p>
-                            <p class="text-gray-600 text-xs">Không chất hóa học, phù hợp cho trẻ sơ sinh</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -602,92 +434,205 @@
                 <p class="text-gray-600 text-sm mt-3">Những chia sẻ chân thực từ các mẹ đã sử dụng</p>
             </div>
 
-            <div class="space-y-6">
-                <!-- Testimonial 1 -->
-                <div class="glass-card rounded-3xl p-5 border border-sage-100/50">
-                    <div class="flex items-start space-x-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-sage-100 to-sage-200 rounded-full flex items-center justify-center">
-                            <span class="text-xl">👩</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-gray-800 text-base">Chị Lan - Mẹ bé Minh An (8 tháng)</p>
-                            <div class="flex items-center space-x-1 mt-1">
-                                <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-                                <span class="text-xs text-gray-500 ml-2">Đã mua 3 túi</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-gradient-to-r from-sage-50 to-cream-50 rounded-2xl p-4 border border-sage-100/50">
-                        <p class="text-gray-700 italic leading-relaxed text-sm">
-                            "Con mình trước đây thức 4-5 lần/đêm, giờ chỉ thức 1-2 lần. Đặc biệt không còn giật mình khóc lúc 2-3h sáng như trước. Khi đi thăm bà ngoại, mang theo túi này con cũng ngủ ngon hơn. Được nhiều mẹ trong group khuyên dùng!"
-                        </p>
-                    </div>
+            <!-- Testimonial Images Grid - 2 columns layout -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <!-- Row 1 -->
+                <div class="glass-card rounded-2xl p-2 border border-sage-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 1"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+                <div class="glass-card rounded-2xl p-2 border border-peach-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 2"
+                         class="w-full h-auto rounded-xl object-cover">
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="glass-card rounded-3xl p-5 border border-peach-100/50">
-                    <div class="flex items-start space-x-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-peach-100 to-peach-200 rounded-full flex items-center justify-center">
-                            <span class="text-xl">👩</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-gray-800 text-base">Chị Hương - Mẹ bé Bảo Nam (5 tháng)</p>
-                            <div class="flex items-center space-x-1 mt-1">
-                                <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-                                <span class="text-xs text-gray-500 ml-2">Khách hàng thân thiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-gradient-to-r from-peach-50 to-cream-50 rounded-2xl p-4 border border-peach-100/50">
-                        <p class="text-gray-700 italic leading-relaxed text-sm">
-                            "Mình chọn sản phẩm này vì 100% tự nhiên, an toàn cho con. Từ khi dùng, con ngủ liên tục 5-6 tiếng thay vì 2-3 tiếng như trước. Mình và chồng cũng được ngủ ngon hơn, không phải thức đêm nhiều."
-                        </p>
-                    </div>
+                <!-- Row 2 -->
+                <div class="glass-card rounded-2xl p-2 border border-cream-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 3"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+                <div class="glass-card rounded-2xl p-2 border border-sage-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 4"
+                         class="w-full h-auto rounded-xl object-cover">
                 </div>
 
-                <!-- Testimonial 3 -->
-                <div class="glass-card rounded-3xl p-5 border border-cream-100/50">
-                    <div class="flex items-start space-x-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-cream-100 to-cream-200 rounded-full flex items-center justify-center">
-                            <span class="text-xl">🤰</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-gray-800 text-base">Chị Mai - Mẹ bầu 7 tháng</p>
-                            <div class="flex items-center space-x-1 mt-1">
-                                <span class="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</span>
-                                <span class="text-xs text-gray-500 ml-2">Mẹ bầu tin dùng</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-gradient-to-r from-cream-50 to-sage-50 rounded-2xl p-4 border border-cream-100/50">
-                        <p class="text-gray-700 italic leading-relaxed text-sm">
-                            "Mình mua từ khi mang bầu để chuẩn bị cho con. Nghe mẹ chồng nói dâu tằm đực giữ vía tốt lắm. Giờ mang theo bên người cảm thấy yên tâm hơn, nhất là trong những ngày đặc biệt."
-                        </p>
-                    </div>
+                <!-- Row 3 -->
+                <div class="glass-card rounded-2xl p-2 border border-peach-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 5"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+                <div class="glass-card rounded-2xl p-2 border border-cream-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 6"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+
+                <!-- Row 4 -->
+                <div class="glass-card rounded-2xl p-2 border border-sage-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 7"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+                <div class="glass-card rounded-2xl p-2 border border-peach-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 8"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+
+                <!-- Row 5 -->
+                <div class="glass-card rounded-2xl p-2 border border-cream-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 9"
+                         class="w-full h-auto rounded-xl object-cover">
+                </div>
+                <div class="glass-card rounded-2xl p-2 border border-sage-100/50 soft-shadow">
+                    <img src="image/fb.jpg" alt="Tin nhắn từ mẹ bỉm sữa 10"
+                         class="w-full h-auto rounded-xl object-cover">
                 </div>
             </div>
 
-            <!-- Social Proof Summary -->
-            <div class="mt-8 text-center">
-                <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
-                    <div class="flex items-center justify-center space-x-4">
-                        <div class="flex -space-x-2">
-                            <div class="w-8 h-8 bg-sage-400 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold">L</div>
-                            <div class="w-8 h-8 bg-peach-400 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold">H</div>
-                            <div class="w-8 h-8 bg-cream-500 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold">M</div>
-                            <div class="w-8 h-8 bg-gray-400 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold">+</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-sage-600">1000+</div>
-                            <div class="text-sm text-gray-600 font-medium">mẹ đã tin dùng</div>
-                        </div>
-                        <div class="text-sage-500 text-2xl">✓</div>
-                    </div>
+            <!-- Note about authenticity -->
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center bg-gradient-to-r from-sage-50 to-peach-50 px-4 py-2 rounded-full border border-sage-200/50">
+                    <span class="text-sage-700 text-sm font-medium">
+                        📱 Những tin nhắn thực tế từ các mẹ đã sử dụng
+                    </span>
                 </div>
             </div>
 
+        </section>
+
+        <!-- How It Works Section - Khúc Dâu Tằm Đực Điểm Khác Biệt -->
+        <section class="relative z-10 px-5 py-8 bg-gradient-to-br from-cream-50 via-sage-50 to-peach-50">
+            <div class="mt-0">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                        Khúc Dâu Tằm Đực
+                        <span class="text-gradient">Điểm Khác Biệt</span>
+                    </h3>
+                    <div class="w-16 h-1 bg-gradient-to-r from-sage-400 to-peach-400 mx-auto rounded-full"></div>
+                </div>
+
+                <!-- Sự khác biệt dâu tằm đực -->
+                <div class="mb-8">
+                    <div class="space-y-6">
+                        <!-- Feature 1: Dâu tằm đực -->
+                        <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
+                            <!-- Ảnh vuông tỉ lệ 1:1 -->
+                            <div class="mb-4">
+                                <div class="w-full aspect-square">
+                                    <img src="image/anh_hero.jpg" alt="Dâu tằm đực thiên nhiên"
+                                         class="w-full h-full object-cover rounded-xl soft-shadow">
+                                </div>
+                            </div>
+                            <!-- Text ở bên dưới -->
+                            <div class="text-center">
+                                <h5 class="font-bold text-sage-700 text-lg mb-2">Chuẩn dâu tằm đực Việt Nam</h5>
+                                <p class="text-gray-600 text-sm leading-relaxed">Bố mình chọn những cành già nhất, đặc lõi, phơi nắng tự nhiên</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2: Trồng và phơi khô -->
+                        <div class="glass-card rounded-2xl p-4 border border-peach-100/50">
+                            <!-- Ảnh vuông tỉ lệ 1:1 -->
+                            <div class="mb-4">
+                                <div class="w-full aspect-square">
+                                    <img src="image/anh_hero.jpg" alt="Trồng và phơi khô tại quê"
+                                         class="w-full h-full object-cover rounded-xl soft-shadow">
+                                </div>
+                            </div>
+                            <!-- Text ở bên dưới -->
+                            <div class="text-center">
+                                <h5 class="font-bold text-peach-700 text-lg mb-2">Cành dâu tằm già chắc, đặc lõi</h5>
+                                <p class="text-gray-600 text-sm leading-relaxed">Thu hái từ vùng quê sạch, phơi khô tự nhiên, không chất bảo quản</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3: An toàn -->
+                        <div class="glass-card rounded-2xl p-4 border border-cream-100/50">
+                            <!-- Ảnh vuông tỉ lệ 1:1 -->
+                            <div class="mb-4">
+                                <div class="w-full aspect-square">
+                                    <img src="image/anh_hero.jpg" alt="An toàn cho mẹ và bé"
+                                         class="w-full h-full object-cover rounded-xl soft-shadow">
+                                </div>
+                            </div>
+                            <!-- Text ở bên dưới -->
+                            <div class="text-center">
+                                <h5 class="font-bold text-cream-700 text-lg mb-2">Phơi nắng tự nhiên</h5>
+                                <p class="text-gray-600 text-sm leading-relaxed">Giúp dâu tằm khô tự nhiên, hấp thụ dương khí</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 4: Thiết kế túi -->
+                        <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
+                            <!-- Ảnh vuông tỉ lệ 1:1 -->
+                            <div class="mb-4">
+                                <div class="w-full aspect-square">
+                                    <img src="image/anh_hero.jpg" alt="Thiết kế túi nhung tinh tế"
+                                         class="w-full h-full object-cover rounded-xl soft-shadow">
+                                </div>
+                            </div>
+                            <!-- Text ở bên dưới -->
+                            <div class="text-center">
+                                <h5 class="font-bold text-sage-700 text-lg mb-2">Hoàn toàn tự nhiên, không chất hóa học</h5>
+                                <p class="text-gray-600 text-sm leading-relaxed">Tiện lợi, tinh tế, dễ mang theo</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 5: Tùy chọn chữ -->
+                        <div class="glass-card rounded-2xl p-4 border border-peach-100/50">
+                            <!-- Ảnh vuông tỉ lệ 1:1 -->
+                            <div class="mb-4">
+                                <div class="w-full aspect-square">
+                                    <img src="image/anh_hero.jpg" alt="Chọn chữ Lộc hoặc Phúc"
+                                         class="w-full h-full object-cover rounded-xl soft-shadow">
+                                </div>
+                            </div>
+                            <!-- Text ở bên dưới -->
+                            <div class="text-center">
+                                <h5 class="font-bold text-peach-700 text-lg mb-2">Túi in chữ Phúc/Lộc nhỏ gọn</h5>
+                                <p class="text-gray-600 text-sm leading-relaxed">Chữ "Lộc" hoặc "Phúc" để cầu mong điều lành</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage Guide -->
+                <div class="glass-card rounded-3xl p-5 border border-peach-100/50 mb-8">
+                    <h4 class="text-lg font-bold text-center text-gray-800 mb-4">
+                        📋 Hướng Dẫn Sử Dụng An Toàn
+                    </h4>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-sage-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">1</div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-1 text-sm">Vị trí đặt túi</h5>
+                                <p class="text-gray-600 text-sm">Đặt túi ở đầu nôi hoặc đầu giường, cách bé 30-50cm</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-peach-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">2</div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-1 text-sm">Thời gian sử dụng</h5>
+                                <p class="text-gray-600 text-sm">Để qua đêm, tạo không gian thư giãn. Có thể mang theo khi đi xa</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-cream-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3</div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-1 text-sm">Thay túi mới</h5>
+                                <p class="text-gray-600 text-sm">Sử dụng được 3-6 tháng, thay túi mới khi mùi thơm nhạt đi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section - Tiếp tục -->
+        <section class="relative z-10 px-5 py-8 bg-white">
             <!-- Cam kết chất lượng -->
-            <div class="mt-8">
+            <div class="mt-0">
                 <div class="glass-card rounded-3xl p-5 border border-sage-100/50">
                     <!-- Header -->
                     <div class="text-center mb-5">
@@ -708,7 +653,7 @@
                                 </div>
                                 <div class="flex-1">
                                     <p class="text-gray-800 font-semibold text-sm">Dâu tằm tự trồng</p>
-                                    <p class="text-gray-600 text-xs">Chuẩn dâu tằm đực Việt Nam, nguồn gốc rõ ràng</p>
+                                    <p class="text-gray-600 text-xs">Từ vườn dâu gia đình, nguồn gốc rõ ràng</p>
                                 </div>
                             </div>
                         </div>
@@ -772,224 +717,30 @@
             </div>
         </section>
 
-        <!-- How It Works Section -->
-        <section class="relative z-10 px-5 py-8 bg-gradient-to-br from-cream-50 via-sage-50 to-peach-50">
-            <div class="text-center mb-8">
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">
-                    Khúc Dâu Tằm Đực 
-                    <span class="text-gradient">Điểm Khác Biệt</span>
-                </h3>
-                <div class="w-16 h-1 bg-gradient-to-r from-sage-400 to-peach-400 mx-auto rounded-full"></div>
-            </div>
 
-            
 
-            <!-- Sự khác biệt dâu tằm đực -->
-            <div class="mb-6">
-                
-                <div class="space-y-4">
-                    <!-- Feature 1: Dâu tằm đực -->
-                    <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 bg-gradient-to-br from-sage-100 to-sage-200 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <img src="image/anh_hero.jpg" alt="Dâu tằm đực thiên nhiên"
-                                     class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="font-bold text-sage-700 text-base mb-1">Dâu tằm đực Việt Nam</h5>
-                                <p class="text-gray-600 text-sm">Tinh dầu tự nhiên, giúp bé thư giãn, ngủ sâu giấc</p>
-                            </div>
-                        </div>
+        <!-- GENTLE SCARCITY SECTION - Không áp lực -->
+        <section class="relative z-10 px-5 py-6 bg-gradient-to-br from-sage-100 via-peach-100 to-cream-100">
+            <div class="glass-card rounded-3xl p-6 border border-sage-200/50 bg-white/80">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-sage-100 to-peach-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🤲</span>
                     </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">Mình chỉ làm được ít thôi</h3>
+                    <p class="text-sm mb-4 text-gray-600 leading-relaxed">
+                        Do làm thủ công nên mỗi ngày mình chỉ chuẩn bị được khoảng 30-50 túi.
+                        <br>Nếu hết, mẹ phải chờ mình làm thêm nhé.
+                    </p>
 
-                    <!-- Feature 2: Trồng và phơi khô -->
-                    <div class="glass-card rounded-2xl p-4 border border-peach-100/50">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 bg-gradient-to-br from-peach-100 to-peach-200 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <img src="image/anh_hero.jpg" alt="Trồng và phơi khô tại quê"
-                                     class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="font-bold text-peach-700 text-base mb-1">Cành dâu tằm già chắc, đặc lõi</h5>
-                                <p class="text-gray-600 text-sm">Thu hái từ vùng quê sạch, phơi khô tự nhiên, không chất bảo quản</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3: An toàn -->
-                    <div class="glass-card rounded-2xl p-4 border border-cream-100/50">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 bg-gradient-to-br from-cream-100 to-cream-200 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <img src="image/anh_hero.jpg" alt="An toàn cho mẹ và bé"
-                                     class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="font-bold text-cream-700 text-base mb-1">Phơi nắng tự nhiên</h5>
-                                <p class="text-gray-600 text-sm">Giúp dâu tằm khô tự nhiên, hấp thụ dương khí</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 4: Thiết kế túi -->
-                    <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 bg-gradient-to-br from-sage-100 to-peach-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <img src="image/anh_hero.jpg" alt="Thiết kế túi nhung tinh tế"
-                                     class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="font-bold text-sage-700 text-base mb-1">Hoàn toàn tự nhiên, không chất hóa học</h5>
-                                <p class="text-gray-600 text-sm">Tiện lợi, tinh tế, dễ mang theo</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 5: Tùy chọn chữ -->
-                    <div class="glass-card rounded-2xl p-4 border border-peach-100/50">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 bg-gradient-to-br from-peach-100 to-cream-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <img src="image/anh_hero.jpg" alt="Chọn chữ Lộc hoặc Phúc"
-                                     class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="font-bold text-peach-700 text-base mb-1">Túi in chữ Phúc/Lộc nhỏ gọn</h5>
-                                <p class="text-gray-600 text-sm">Chữ "Lộc" hoặc "Phúc" để cầu mong điều lành</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Usage Guide -->
-            <div class="glass-card rounded-3xl p-5 border border-peach-100/50">
-                <h4 class="text-lg font-bold text-center text-gray-800 mb-4">
-                    📋 Hướng Dẫn Sử Dụng An Toàn
-                </h4>
-
-                <div class="space-y-4">
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 bg-sage-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">1</div>
-                        <div>
-                            <h5 class="font-semibold text-gray-800 mb-1 text-sm">Vị trí đặt túi</h5>
-                            <p class="text-gray-600 text-sm">Đặt túi ở đầu nôi hoặc đầu giường, cách bé 30-50cm</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 bg-peach-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">2</div>
-                        <div>
-                            <h5 class="font-semibold text-gray-800 mb-1 text-sm">Thời gian sử dụng</h5>
-                            <p class="text-gray-600 text-sm">Để qua đêm, tạo không gian thư giãn. Có thể mang theo khi đi xa</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 bg-cream-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3</div>
-                        <div>
-                            <h5 class="font-semibold text-gray-800 mb-1 text-sm">Thay túi mới</h5>
-                            <p class="text-gray-600 text-sm">Sử dụng được 3-6 tháng, thay túi mới khi mùi thơm nhạt đi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Final CTA Section -->
-        <section class="relative z-10 px-5 py-8 bg-gradient-to-br from-peach-50 via-sage-50 to-cream-50">
-            <div class="text-center">
-                <!-- Final CTA Button -->
-                <div class="glass-card rounded-3xl p-6 border border-peach-100/50 mb-6">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">
-                            Đặt Hàng Ngay Hôm Nay
-                        </h3>
-                        <p class="text-gray-600 text-sm">Chỉ với 39.000đ - Mẹ sẽ có đêm ngủ yên bình</p>
-                    </div>
-
-                    <!-- Final countdown -->
-                    <div class="bg-gradient-to-r from-peach-100 to-sage-100 rounded-2xl p-3 mb-4 border border-peach-200/50">
-                        <div class="text-center">
-                            <div class="flex items-center justify-center mb-2">
-                                <div class="w-6 h-6 bg-peach-500 rounded-full flex items-center justify-center mr-2">
-                                    <span class="text-white text-xs">⏰</span>
-                                </div>
-                                <span class="text-peach-700 font-medium text-sm">Ưu đãi kết thúc sau</span>
-                            </div>
-                            <div id="countdown2" class="flex items-center justify-center space-x-2 text-sm font-semibold text-peach-700">
-                                <div class="bg-white/80 rounded-lg px-2 py-1 min-w-[28px]">
-                                    <span id="hours2">23</span>
-                                    <div class="text-xs opacity-70">h</div>
-                                </div>
-                                <span>:</span>
-                                <div class="bg-white/80 rounded-lg px-2 py-1 min-w-[28px]">
-                                    <span id="minutes2">59</span>
-                                    <div class="text-xs opacity-70">m</div>
-                                </div>
-                                <span>:</span>
-                                <div class="bg-white/80 rounded-lg px-2 py-1 min-w-[28px]">
-                                    <span id="seconds2">59</span>
-                                    <div class="text-xs opacity-70">s</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button onclick="scrollToOrder()" class="w-full bg-gradient-to-r from-peach-500 to-sage-500 hover:from-peach-600 hover:to-sage-600 text-white font-bold text-lg px-6 py-4 rounded-2xl soft-shadow hover:shadow-lg transition-all duration-300 mb-4 transform hover:scale-105">
-                        <div class="flex items-center justify-center">
-                            <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                                <span class="text-sm">🛒</span>
-                            </div>
-                            <div>
-                                <div class="text-lg font-bold">ĐẶT HÀNG NGAY</div>
-                                <div class="text-sm font-normal opacity-90">Mua 2 túi FREESHIP - Tiết kiệm 25K</div>
-                            </div>
-                        </div>
-                    </button>
-
-                    <!-- Final trust signals -->
-                    <div class="flex items-center justify-center space-x-4 text-xs text-gray-600">
-                        <div class="flex items-center space-x-1">
-                            <div class="w-2 h-2 bg-sage-400 rounded-full"></div>
-                            <span>1000+ mẹ tin dùng</span>
-                        </div>
-                        <div class="flex items-center space-x-1">
-                            <div class="w-2 h-2 bg-peach-400 rounded-full"></div>
-                            <span>100% tự nhiên</span>
-                        </div>
-                        <div class="flex items-center space-x-1">
-                            <div class="w-2 h-2 bg-cream-500 rounded-full"></div>
-                            <span>Đổi trả 7 ngày</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gentle urgency message -->
-                <div class="glass-card rounded-2xl p-4 border border-sage-100/50">
-                    <div class="flex items-center justify-center space-x-3">
-                        <div class="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center animate-soft-pulse">
-                            <span class="text-sage-600 text-sm">📦</span>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-gray-700 font-semibold text-sm">Số lượng có hạn</p>
-                            <p class="text-gray-600 text-xs">Mỗi ngày chỉ chuẩn bị 100 túi thủ công</p>
-                        </div>
-                    </div>
+                    <p class="text-xs text-gray-500">
+                        💝 Cảm ơn mẹ đã kiên nhẫn chờ đợi
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Order Form Section -->
         <section id="order-section" class="relative z-10 px-5 py-8 bg-white">
-            <div class="text-center mb-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center justify-center">
-                    <div class="w-6 h-6 bg-peach-100 rounded-full flex items-center justify-center mr-2">
-                        <span class="text-peach-600 text-sm">🛒</span>
-                    </div>
-                    Thông Tin Đặt Hàng
-                </h3>
-                <p class="text-gray-600 text-sm">Vui lòng điền đầy đủ thông tin để chúng tôi giao hàng</p>
-            </div>
-
             <!-- Natural Product Selection - Countryside Style -->
             <div class="glass-card rounded-3xl p-5 border border-sage-100/50 mb-6 relative overflow-hidden">
                 <!-- Decorative natural elements -->
@@ -1007,121 +758,64 @@
                     <p class="text-gray-600 text-xs">Theo kinh nghiệm của các mẹ đã dùng</p>
                 </div>
 
-                <div class="space-y-4">
-                    <!-- Gói 1 túi - Dùng thử -->
-                    <div class="bg-gradient-to-r from-cream-50 to-sage-50 p-4 rounded-2xl border border-cream-200/60 hover:border-sage-300/60 transition-all">
-                        <div class="flex justify-between items-start mb-2">
-                            <div class="flex-1">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <div class="w-3 h-3 bg-cream-400 rounded-full"></div>
-                                    <h5 class="font-bold text-gray-800 text-sm">1 Túi Dâu Tằm</h5>
-                                </div>
-                                <p class="text-cream-600 text-xs mb-1">Dùng thử cho bé yêu</p>
-                                <div class="text-xs text-gray-500 italic">
-                                    "Thử nghiệm xem bé có hợp không"
-                                </div>
+                <div class="space-y-3">
+                    <!-- Gói 1 túi -->
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 hover:border-sage-300 transition-all">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h5 class="font-semibold text-gray-800">1 Túi Dâu Tằm</h5>
+                                <p class="text-gray-500 text-sm">Dùng thử cho bé yêu</p>
                             </div>
-                            <div class="text-right ml-3">
-                                <div class="text-base font-bold text-gray-800">39K</div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-gray-800">39K</div>
                                 <div class="text-xs text-gray-500">+ ship 25K</div>
                             </div>
-                        </div>
-                        <div class="flex items-center space-x-2 text-xs">
-                            <span class="bg-cream-100 text-cream-700 px-2 py-1 rounded-full border border-cream-200">🏠 Giao tận nhà</span>
                         </div>
                     </div>
 
                     <!-- Gói 2 túi - Phổ biến -->
-                    <div class="bg-gradient-to-r from-sage-50 to-peach-50 p-4 rounded-2xl border-2 border-sage-200/70 relative">
+                    <div class="bg-gradient-to-r from-sage-50 to-peach-50 p-4 rounded-xl border-2 border-sage-300 relative">
                         <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                            <div class="bg-sage-500 text-white px-3 py-1 rounded-full text-xs font-medium soft-shadow flex items-center space-x-1">
-                                <span>⭐</span>
-                                <span>Mẹ chọn nhiều</span>
+                            <div class="bg-sage-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                ⭐ Mẹ chọn nhiều
                             </div>
                         </div>
                         <div class="pt-2">
-                            <div class="flex justify-between items-start mb-2">
-                                <div class="flex-1">
-                                    <div class="flex items-center space-x-2 mb-1">
-                                        <div class="w-3 h-3 bg-sage-500 rounded-full"></div>
-                                        <h5 class="font-bold text-gray-800 text-sm">2 Túi Dâu Tằm</h5>
-                                    </div>
-                                    <p class="text-sage-600 text-xs mb-1">Một để nhà, một mang theo</p>
-                                    <div class="text-xs text-gray-500 italic">
-                                        "Như bà ngoại hay dặn: chuẩn bị dự phòng"
-                                    </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h5 class="font-semibold text-gray-800">2 Túi Dâu Tằm</h5>
+                                    <p class="text-sage-600 text-sm">Một để nhà, một mang theo</p>
                                 </div>
-                                <div class="text-right ml-3">
-                                    <div class="text-gray-400 line-through text-xs">103K</div>
-                                    <div class="text-base font-bold text-sage-700">75K</div>
+                                <div class="text-right">
+                                    <div class="text-gray-400 line-through text-sm">103K</div>
+                                    <div class="text-lg font-bold text-sage-700">75K</div>
                                     <div class="text-xs text-sage-600">Tiết kiệm 28K</div>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-1 text-xs">
-                                <span class="bg-sage-100 text-sage-700 px-2 py-1 rounded-full border border-sage-200">🚚 Miễn phí ship</span>
-                                <span class="bg-peach-100 text-peach-700 px-2 py-1 rounded-full border border-peach-200">💝 Gói đẹp</span>
+                            <div class="mt-2 flex gap-2">
+                                <span class="bg-sage-100 text-sage-700 px-2 py-1 rounded-full text-xs">🚚 Miễn phí ship</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Gói 3 túi -->
-                    <div class="bg-gradient-to-r from-peach-50 to-cream-50 p-4 rounded-2xl border border-peach-200/60 hover:border-peach-300/60 transition-all">
-                        <div class="flex justify-between items-start mb-2">
-                            <div class="flex-1">
-                                <div class="flex items-center space-x-2 mb-1">
-                                    <div class="w-3 h-3 bg-peach-500 rounded-full"></div>
-                                    <h5 class="font-bold text-gray-800 text-sm">3 Túi Dâu Tằm</h5>
-                                </div>
-                                <p class="text-peach-600 text-xs mb-1">Chia sẻ với bạn bè</p>
-                                <div class="text-xs text-gray-500 italic">
-                                    "Cùng chăm con khỏe mạnh"
-                                </div>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 hover:border-peach-300 transition-all">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h5 class="font-semibold text-gray-800">3 Túi + tặng 1 túi</h5>
+                                <p class="text-peach-600 text-sm">Chia sẻ với bạn bè</p>
                             </div>
-                            <div class="text-right ml-3">
-                                <div class="text-gray-400 line-through text-xs">142K</div>
-                                <div class="text-base font-bold text-peach-700">115K</div>
+                            <div class="text-right">
+                                <div class="text-gray-400 line-through text-sm">142K</div>
+                                <div class="text-lg font-bold text-peach-700">115K</div>
                                 <div class="text-xs text-peach-600">Chỉ 38K/túi</div>
                             </div>
                         </div>
-                        <div class="flex flex-wrap gap-1 text-xs">
-                            <span class="bg-sage-100 text-sage-700 px-2 py-1 rounded-full border border-sage-200">🚚 Miễn phí ship</span>
-                            <span class="bg-peach-100 text-peach-700 px-2 py-1 rounded-full border border-peach-200">🎁 Túi vải thêu</span>
+                        <div class="mt-2 flex gap-2">
+                            <span class="bg-peach-100 text-peach-700 px-2 py-1 rounded-full text-xs">🚚 Miễn phí ship</span>
                         </div>
                     </div>
 
-                    <!-- Gói 4 = 5 túi - Siêu tiết kiệm -->
-                    <div class="bg-gradient-to-r from-cream-50 to-sage-50 p-4 rounded-2xl border-2 border-cream-200/70 relative">
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                            <div class="bg-gradient-to-r from-peach-500 to-cream-500 text-white px-3 py-1 rounded-full text-xs font-medium soft-shadow flex items-center space-x-1">
-                                <span>🔥</span>
-                                <span>Siêu tiết kiệm</span>
-                            </div>
-                        </div>
-                        <div class="pt-2">
-                            <div class="flex justify-between items-start mb-2">
-                                <div class="flex-1">
-                                    <div class="flex items-center space-x-2 mb-1">
-                                        <div class="w-3 h-3 bg-cream-500 rounded-full"></div>
-                                        <h5 class="font-bold text-gray-800 text-sm">Mua 4 Tặng 1 Túi</h5>
-                                    </div>
-                                    <p class="text-cream-600 text-xs mb-1">Đủ dùng cả năm</p>
-                                    <div class="text-xs text-gray-500 italic">
-                                        "Như mẹ chồng dặn: mua đủ dùng"
-                                    </div>
-                                </div>
-                                <div class="text-right ml-3">
-                                    <div class="text-gray-400 line-through text-xs">195K</div>
-                                    <div class="text-base font-bold text-cream-700">150K</div>
-                                    <div class="text-xs text-cream-600">Chỉ 30K/túi</div>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap gap-1 text-xs">
-                                <span class="bg-sage-100 text-sage-700 px-2 py-1 rounded-full border border-sage-200">🚚 Miễn phí ship</span>
-                                <span class="bg-peach-100 text-peach-700 px-2 py-1 rounded-full border border-peach-200">🎉 Tặng 1 túi</span>
-                                <span class="bg-cream-100 text-cream-700 px-2 py-1 rounded-full border border-cream-200">� Rẻ nhất</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Gentle advice -->
@@ -1129,10 +823,21 @@
                     <div class="flex items-center space-x-2">
                         <span class="text-sm">💡</span>
                         <p class="text-sage-700 font-medium text-xs">
-                            Gợi ý: Hầu hết các mẹ chọn gói 2 túi để thay phiên sử dụng
+                            Gợi ý: Hầu hết các mẹ chọn gói 2 túi, 1 túi để đầu giường, 1 túi mang theo khi cho bé ra ngoài chơi.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Order Form Header -->
+            <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center justify-center">
+                    <div class="w-6 h-6 bg-peach-100 rounded-full flex items-center justify-center mr-2">
+                        <span class="text-peach-600 text-sm">🛒</span>
+                    </div>
+                    Thông Tin Đặt Hàng
+                </h3>
+                <p class="text-gray-600 text-sm">Vui lòng điền đầy đủ thông tin để chúng tôi giao hàng</p>
             </div>
 
             <!-- Order Form -->
@@ -1436,6 +1141,135 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- STICKY CTA BUTTON - Thiên nhiên -->
+    <div id="stickyCtaButton" class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-sage-500 to-peach-500 text-white p-4 z-50 shadow-2xl border-t-4 border-sage-300">
+        <div class="max-w-md mx-auto">
+            <button onclick="scrollToOrder()" class="w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-bold py-3 rounded-xl transition-all duration-300 transform hover:scale-105">
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="animate-gentle-bounce">🌿</span>
+                    <span class="text-lg">Nhắn cho mình nhé</span>
+                    <span class="animate-gentle-bounce">🌿</span>
+                </div>
+                <div class="text-sm opacity-90 mt-1">39K - Freeship từ 2 túi</div>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Auto-hide sticky button when near order form
+        window.addEventListener('scroll', function() {
+            const orderSection = document.getElementById('order-section');
+            const stickyButton = document.getElementById('stickyCtaButton');
+
+            if (orderSection && stickyButton) {
+                const orderSectionTop = orderSection.offsetTop;
+                const scrollPosition = window.scrollY + window.innerHeight;
+
+                if (scrollPosition >= orderSectionTop) {
+                    stickyButton.style.display = 'none';
+                } else {
+                    stickyButton.style.display = 'block';
+                }
+            }
+        });
+
+        // Simulate live stock counter
+        function updateStock() {
+            const stockElement = document.getElementById('remaining-stock');
+            const viewersElement = document.getElementById('viewers-count');
+
+            if (stockElement) {
+                let currentStock = parseInt(stockElement.textContent);
+                if (currentStock > 10) {
+                    // Randomly decrease stock
+                    if (Math.random() < 0.3) {
+                        currentStock--;
+                        stockElement.textContent = currentStock;
+                    }
+                }
+            }
+
+            if (viewersElement) {
+                // Simulate viewers count
+                const baseViewers = 23;
+                const variation = Math.floor(Math.random() * 10) - 5;
+                viewersElement.textContent = Math.max(15, baseViewers + variation);
+            }
+        }
+
+        // Update every 30 seconds
+        setInterval(updateStock, 30000);
+
+        // Countdown Timer Function
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            const distance = endOfDay.getTime() - now;
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const timerElement = document.getElementById('countdown-timer');
+            if (timerElement) {
+                timerElement.innerHTML =
+                    String(hours).padStart(2, '0') + ':' +
+                    String(minutes).padStart(2, '0') + ':' +
+                    String(seconds).padStart(2, '0');
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Dynamic stock and social proof
+        function updateDynamicStats() {
+            const stockElement = document.getElementById('stock-count');
+            const ordersElement = document.getElementById('orders-count');
+            const viewersElement = document.getElementById('viewers-count');
+
+            if (stockElement) {
+                // Simulate decreasing stock
+                const baseStock = 12;
+                const variation = Math.floor(Math.random() * 3);
+                stockElement.textContent = Math.max(8, baseStock - variation);
+            }
+
+            if (ordersElement) {
+                // Simulate increasing orders
+                const baseOrders = 47;
+                const variation = Math.floor(Math.random() * 5);
+                ordersElement.textContent = baseOrders + variation;
+            }
+
+            if (viewersElement) {
+                // Simulate fluctuating viewers
+                const baseViewers = 156;
+                const variation = Math.floor(Math.random() * 20) - 10;
+                viewersElement.textContent = Math.max(140, baseViewers + variation);
+            }
+        }
+
+        // Update stats every 15 seconds
+        setInterval(updateDynamicStats, 15000);
+        updateDynamicStats(); // Initial call
+    </script>
+
+    <!-- Sticky CTA Button - Luôn hiển thị ở cuối màn hình -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-red-600 to-orange-600 p-4 z-50 shadow-2xl border-t-4 border-yellow-400">
+        <div class="max-w-md mx-auto">
+            <button onclick="scrollToOrder()" class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-red-800 font-bold py-3 px-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 animate-bounce">
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-lg">🚨</span>
+                    <span class="text-base">ĐẶT NGAY - CHỈ CÒN ÍT TÚI!</span>
+                </div>
+                <div class="text-xs opacity-90 mt-1">Freeship toàn quốc - Giao hàng 24h</div>
+            </button>
         </div>
     </div>
 
